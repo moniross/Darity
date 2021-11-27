@@ -20,7 +20,7 @@
     display: flex;
     a,
     i {
-      color: $color_black;
+      color: $color_white;
       font-size: 1.2rem;
     }
     i {
@@ -81,7 +81,7 @@
       margin-bottom: 1rem;
 
       a {
-        color: $color_black;
+        color: $color_white;
         &:hover {
           padding-left: 0.5rem;
           color: $color_brand;

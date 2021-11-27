@@ -16,7 +16,7 @@
     border: 1px solid #eaeaee;
     border-radius: 100px;
     .breadcrumb-item {
-      color: #91A1BC;
+      color: #91a1bc;
       display: flex;
       align-items: center;
       padding-left: 2px;
@@ -39,7 +39,7 @@
       a {
         font-size: 13px;
         font-weight: normal !important;
-        color: #91A1BC;
+        color: #91a1bc;
       }
       &.active {
         font-size: 13px;
@@ -57,11 +57,11 @@
   display: flex;
   align-items: center;
   a {
-    color: $color_black;
+    color: $color_white;
   }
   &.has_style1 {
     border-radius: $border_radius;
-    background: $color_black !important ;
+    background: $color_white !important ;
     a {
       color: rgba(255, 255, 255, 0.459);
     }

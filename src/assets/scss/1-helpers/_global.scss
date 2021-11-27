@@ -8,7 +8,7 @@ body {
     family: "SoraStd", sans-serif;
     size: 16px;
   }
-  color: $color_black;
+  color: $color_text;
   @include prefixer(transition, 0.3s ease-in-out, webkit moz o ms);
   &.modal-open {
     padding-right: 0 !important;

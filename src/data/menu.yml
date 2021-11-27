@@ -1,0 +1,14 @@
+header:
+  # ===================================
+  - title: Marketplace
+    link: "Marketplace"
+  # ===================================
+  - title: Collections
+    link: "Collections"
+  # ===================================
+  - title: Profile
+    link: "Profile"
+  # ===================================
+  - title: Creators
+    link: "Creators"
+

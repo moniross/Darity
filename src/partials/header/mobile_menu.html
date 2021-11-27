@@ -1,0 +1,20 @@
+<div class="header__mobile js-header-mobile">
+	<div class="header__mobile__menu space-y-40">
+		<ul class="d-flex space-y-20">
+			{{#each menu.header}}
+			<li> <a class="color_black" href="{{link}}.html"> {{title}}</a> </li>
+			{{/each}}
+
+		</ul>
+		<div class="space-y-20">
+			<div class="header__search in_mobile w-full">
+				<input type="text" placeholder="Search" />
+				<button class="header__result">
+					<i class="ri-search-line"></i>
+				</button>
+			</div>
+			<a class="btn btn-grad btn-sm" href="{{root}}Connect-wallet.html">Connect
+				wallet</a>
+		</div>
+	</div>
+</div>

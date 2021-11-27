@@ -12713,25 +12713,6 @@ p a.btn:hover {
 /*--------------------------------------------------------------
 ## form styles
 --------------------------------------------------------------*/
-.select-holder {
-  position: relative;
-}
-.select-holder:after {
-  content: "\f3d0";
-  font-family: "Ionicons";
-  font-weight: 600;
-  font-size: 13px;
-  position: absolute;
-  line-height: 1;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 18px;
-  z-index: 10;
-  -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-}
-
 select {
   cursor: pointer;
   display: inline-block;
@@ -12762,11 +12743,10 @@ select,
 textarea,
 .custom-select {
   background: 0 0;
-  color: #232226;
-  background-color: #f2f7fa !important;
-  border: 1px solid transparent !important;
+  color: #708299;
+  background-color: #10173e;
+  border: none;
   width: 100%;
-  padding: 15px;
   line-height: 1.5;
   font-weight: 400;
   font-size: inherit;
@@ -12776,6 +12756,12 @@ textarea,
   -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   outline: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  padding: 1px;
 }
 @media screen and (max-width: 576px) {
   input[type=text],
@@ -12824,22 +12810,7 @@ select:hover,
 textarea:hover,
 .custom-select:hover {
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 17px 13px 0px #192c4b05;
-          box-shadow: 0px 17px 13px 0px #192c4b05;
   border: solid 1px linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
-}
-input[type=text].input_white,
-input[type=password].input_white,
-input[type=email].input_white,
-input[type=tel].input_white,
-input[type=number].input_white,
-select.input_white,
-textarea.input_white,
-.custom-select.input_white {
-  background-color: #ffffff !important;
-  border: 1px solid linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%) !important;
-  -webkit-box-shadow: 0px 17px 13px 0px #192c4b05;
-          box-shadow: 0px 17px 13px 0px #192c4b05;
 }
 
 @media screen and (max-width: 576px) {
@@ -13861,25 +13832,11 @@ label:active:after {
 =======================*/
 .header__1 {
   position: relative;
-  background: #ffffff;
-  border-bottom: solid 1px linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
   width: 100%;
   white-space: nowrap;
 }
 .header__1.header_wallet {
   display: none;
-}
-.header__1 .header__menu {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-.header__1 .header__menu::-webkit-scrollbar {
-  display: none;
-}
-.header__1 .header__menu a {
-  white-space: nowrap;
 }
 .header__1 .wrapper {
   padding: 20px 0;
@@ -13895,7 +13852,7 @@ label:active:after {
   gap: 10px;
 }
 .header__1 .header__logo img {
-  height: 2.2rem;
+  height: 2rem;
 }
 .header__1 .is_new {
   position: relative;
@@ -13990,15 +13947,19 @@ label:active:after {
   max-width: inherit;
 }
 .header__1 .header__search {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  padding: 1px;
+  background-color: #10173e;
   height: 3rem;
-  width: 20rem;
   border-radius: 10px;
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  border: solid 1px transparent;
 }
 @media screen and (max-width: 991px) {
   .header__1 .header__search.in_mobile {
@@ -14007,21 +13968,21 @@ label:active:after {
   }
 }
 .header__1 .header__search:hover {
-  background: white;
-  -webkit-box-shadow: 0px 17px 13px 0px #192c4b05;
-          box-shadow: 0px 17px 13px 0px #192c4b05;
-  border: solid 1px linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: #10173e;
 }
 .header__1 .header__search input {
   width: 100%;
   height: 100%;
-  background: transparent !important;
-  border: none !important;
+  background-color: transparent !important;
   padding-left: calc(2rem + 20px);
+  background-image: none;
+}
+.header__1 .header__search input:focus {
+  color: white;
 }
 .header__1 .header__search .header__result {
   border: none;
-  background: #ffffff;
+  background: transparent;
   border-radius: 200px;
   height: 2rem;
   width: 2rem;
@@ -14030,6 +13991,10 @@ label:active:after {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.header__1 .header__search .header__result i {
+  color: #ffffff;
+  font-size: 20px;
 }
 .header__1 .header__burger {
   display: none;

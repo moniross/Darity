@@ -2,24 +2,6 @@
 ## form styles
 --------------------------------------------------------------*/
 
-.select-holder {
-  position: relative;
-
-  &:after {
-    content: "\f3d0";
-    font-family: "Ionicons";
-    font-weight: 600;
-    font-size: 13px;
-    position: absolute;
-    line-height: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 18px;
-    z-index: 10;
-    @include animate();
-  }
-}
-
 select {
   cursor: pointer;
   display: inline-block;
@@ -48,11 +30,10 @@ select,
 textarea,
 .custom-select {
   background: 0 0;
-  color: #232226;
-  background-color: #f2f7fa !important;
-  border: 1px solid transparent !important;
+  color: $color_text;
+  background-color: $color_secondary;
+  border: none;
   width: 100%;
-  padding: 15px;
   line-height: 1.5;
   font-weight: 400;
   font-size: inherit;
@@ -61,6 +42,16 @@ textarea,
   -webkit-appearance: none;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   outline: 0;
+  background-image: linear-gradient($color_secondary, $color_secondary),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.19) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  padding: 1px;
   @include sm {
     padding: 12px;
     font-size: 14px;
@@ -75,13 +66,7 @@ textarea,
   }
   &:hover {
     background-color: $color_white;
-    box-shadow: $shadow_1;
     border: solid 1px $color_stroke;
-  }
-  &.input_white {
-    background-color: $color_white !important;
-    border: 1px solid $color_stroke !important;
-    box-shadow: $shadow_1;
   }
 }
 .form-select {

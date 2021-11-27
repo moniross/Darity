@@ -36,10 +36,6 @@ body {
   @include md {
     font-size: 15.5px;
   }
-
-  &.is__dark {
-    background: $color_dark;
-  }
 }
 @media (min-width: 1400px) {
   .container,

@@ -93,6 +93,7 @@
 @mixin overlay {
   z-index: 0;
   transition: 0.2s $transition_function;
+  position: relative;
   &::before {
     content: "";
     width: 100%;
@@ -102,8 +103,11 @@
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.308);
+    background: linear-gradient(
+      97.74deg,
+      rgba(6, 11, 39, 0.87) 7.11%,
+      rgba(0, 0, 0, 0) 90.23%
+    );
     @content;
   }
 }

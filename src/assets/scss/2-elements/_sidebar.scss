@@ -1,21 +1,105 @@
 .sidebar {
-  height: calc(100vh - 160px);
-  min-height: 550px;
-  margin-top: 160px;
-  width: max-content;
-  background-color: white;
-  padding: 22.29px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: $shadow_1;
-  border: solid 1px $color_stroke;
-  border-top: none;
-  position: fixed;
+  height: calc(100vh - 128px);
+  min-height: 650px;
+  margin-top: 20px;
+  background-color: $color_secondary;
+  background-image: linear-gradient($color_secondary, $color_secondary),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.19) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  border-radius: $border_radius;
+  padding: 1px;
+  .sidabar_content {
+    width: 220px;
+    height: 100%;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .categories {
+      .marketplace_pages {
+        margin-bottom: 40px;
+      }
+      .marketplace_pages,
+      .account_pages {
+        .pages_title {
+          color: $color_text;
+          font-weight: normal;
+          margin-bottom: 20px;
+        }
+        ul {
+          margin-left: 8px;
+          li {
+            margin-bottom: 10px;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+            a {
+              display: flex;
+              align-items: center;
+              color: $color_text;
+              transition: all 0.25s $transition_function;
+              p {
+                transition: all 0.25s $transition_function;
+              }
+              &:hover {
+                color: $color_brand;
+                p {
+                  color: $color_brand;
+                }
+              }
+              i {
+                font-size: 24px;
+                margin-right: 5px;
+              }
+              &.active {
+                color: $color_white;
+                p {
+                  color: $color_white;
+                }
+                &:hover {
+                  color: $color_white;
+                  p {
+                    color: $color_white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .logout {
+      a {
+        display: flex;
+        align-items: center;
+        color: $color_text;
+        transition: all 0.25s $transition_function;
+        i {
+          font-size: 24px;
+          margin-right: 5px;
+        }
+        p {
+          transition: all 0.25s $transition_function;
+        }
+        &:hover {
+          color: $color_red;
+          p {
+            color: $color_red;
+          }
+        }
+      }
+    }
+  }
+
   @include lg {
-    padding: 20px;
     margin-right: 0;
-    flex-direction: row;
     height: auto;
     min-height: auto;
     width: 100%;
@@ -24,8 +108,5 @@
     position: relative;
     height: auto;
     margin-top: 150px;
-  }
-  @include sm {
-    padding: 20px;
   }
 }

@@ -3,12 +3,13 @@
   background-size: coveer;
   background-repeat: no-repeat;
   background-position: center top;
-  .content_wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+
   .main_marketplace {
-    width: 100%;
+    position: relative;
+    left: 275px;
+    top: 88px;
+    display: flex;
+    height: 100vh;
     .hero_marketplace {
       background-image: url(../img/bg/cover.png);
       background-repeat: no-repeat;

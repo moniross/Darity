@@ -6,10 +6,9 @@
 
   .main_marketplace {
     position: relative;
-    left: 275px;
-    top: 88px;
+    margin-left: 275px;
+    margin-top: 88px;
     display: flex;
-    height: 100vh;
     .hero_marketplace {
       background-image: url(../img/bg/cover.png);
       background-repeat: no-repeat;

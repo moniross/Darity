@@ -2,6 +2,8 @@
   position: fixed;
   width: 100%;
   white-space: nowrap;
+  z-index: 2;
+  background-color: $color_dark;
   &.header_wallet {
     display: none;
   }
@@ -101,7 +103,8 @@
     border-radius: $border_radius * 0.5;
     position: relative;
     transition: all 0.2s ease-in-out;
-
+    margin-left: 158px;
+    margin-right: 93px;
     &:hover {
       background-color: $color_secondary;
     }

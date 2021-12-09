@@ -1,11 +1,60 @@
-.card_items {
-  border-width: 4px;
-  border-style: solid;
-  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-  border-radius: $border_radius;
-  .item_img {
+.card_item {
+  // Card one
+  &.one {
+    margin-bottom: 30px;
+    .card_head {
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    .card_body {
+      .card_title {
+        font-size: 16px;
+      }
+      .bid_details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 16px;
+        background-image: url(../img/bg/gardient_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        .status {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  // Card two
+  &.two {
+    display: flex;
+    align-items: center;
+    .card_body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  // Card three
+  &.three {
+    display: flex;
+    align-items: center;
+    background-image: url(../img/bg/gardient_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    padding: 20px;
+    border: 1px solid $color_border;
+    border-radius: 10px;
+    .card_body {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

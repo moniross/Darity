@@ -3,12 +3,15 @@
   background-size: coveer;
   background-repeat: no-repeat;
   background-position: center top;
-
+  margin-bottom: 20px;
   .main_marketplace {
     position: relative;
-    margin-left: 275px;
+    margin-left: 280px;
     margin-top: 88px;
     display: flex;
+    @include xl {
+      margin-left: 120px;
+    }
     .hero_marketplace {
       background-image: url(../img/bg/cover.png);
       background-repeat: no-repeat;
@@ -17,7 +20,7 @@
         border-radius: $border_radius;
       }
       .hero_title {
-        max-width: 25rem;
+        max-width: 30rem;
       }
     }
     .categories {

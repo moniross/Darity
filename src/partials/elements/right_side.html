@@ -1,3 +1,55 @@
-<div class="right_side">
-    <h1>right_side</h1>
+<div class="aside_marketplace space-y-30">
+  <div>
+    <h2 class="section_title">Recently Added</h2>
+    <div class="recently_added space-y-15">
+      {{#each cards.items2}}
+      <div class="card_item two space-x-10">
+        <div class="card_head">
+          <img src="../../assets/img/items/item{{img}}.png" alt="nft" />
+        </div>
+        <div class="card_body">
+          <div>
+            <a href="#">
+              <h6 class="card_title">{{title}}</h6>
+            </a>
+            <a href="#">
+              <p class="avatars_name txt_sm">@{{avatar_name}}</p>
+            </a>
+          </div>
+          <div>
+            <span class="date">{{date}} ago</span>
+          </div>
+        </div>
+      </div>
+      <div class="{{border}}"></div>
+      {{/each }}
+    </div>
+  </div>
+  <div>
+    <h2 class="section_title">Top Creators</h2>
+    <div class="top_creators space-y-15">
+      {{#each cards.items3}}
+      <div class="card_item three space-x-10">
+        <div class="card_head">
+          <img src="../../assets/img/avatars/{{img}}.png" alt="creator" />
+        </div>
+        <div class="card_body">
+          <div>
+            <div>{{sold}} <span class="color_text">ETH</span></div>
+            <a href="#">
+              <p class="avatars_name color_white">{{avatar_name}}</p>
+            </a>
+            <span class="color_text">@{{collection_name}}</span>
+          </div>
+          <div>
+            <div class="icon">
+              <i class="ri-add-line"></i>
+            </div>
+            <span class="rank"># {{rank}}</span>
+          </div>
+        </div>
+      </div>
+      {{/each }}
+    </div>
+  </div>
 </div>

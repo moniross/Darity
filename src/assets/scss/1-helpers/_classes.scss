@@ -61,7 +61,10 @@
 .hr {
   height: 1px;
   width: 100%;
-  background: $color_stroke;
+  background: $color_border2;
+}
+.nhr {
+  margin: 0 !important;
 }
 
 // ------------ typography
@@ -81,7 +84,7 @@
   }
 }
 .txt_sm {
-  font-size: 16px;
+  font-size: 15px;
   &._bold {
     font-family: $font-primary;
   }

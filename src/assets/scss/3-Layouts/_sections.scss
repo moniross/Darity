@@ -1,12 +1,23 @@
-.section__title {
-  font-size: 34px;
-  @include tablet_vert_screen {
-    font-size: 32px;
-  }
-  @include sm {
-    font-size: 30px;
-  }
+.section_title {
+  margin-bottom: 20px;
 }
 .section__head {
   margin-bottom: 30px;
+}
+// Trending auctions
+.trending_auctions {
+  position: relative;
+}
+// Aside marketplace
+.aside_marketplace {
+  min-width: 330px;
+  .recently_added {
+    background-image: url(../img/bg/gardient_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 20px;
+    border: 1px solid $color_border;
+    border-radius: 10px;
+  }
 }

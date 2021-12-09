@@ -28,11 +28,6 @@
   }
 }
 
-@mixin xl {
-  @media screen and (min-width: 1800px) {
-    @content;
-  }
-}
 
 @mixin max-lg {
   @media screen and (max-width: 1200px) {

@@ -3,7 +3,7 @@
   top: 88px;
   left: 15px;
   height: calc(100vh - 88px);
-  max-height: 760px;
+  max-height: 742px;
   width: 260px;
   background-color: $color_secondary;
   background-image: linear-gradient($color_secondary, $color_secondary),
@@ -16,9 +16,8 @@
   background-clip: content-box, border-box;
   border: none;
   border-radius: $border_radius;
-  padding: 1px;
   z-index: 1;
-  @include lg {
+  @include xl {
     width: 100px;
   }
   .sidabar_content {
@@ -28,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include lg {
+    @include xl {
       width: 100px;
     }
     .categories {
@@ -36,7 +35,7 @@
       scrollbar-width: thin;
       .marketplace_pages {
         margin-bottom: 30px;
-        @include lg {
+        @include xl {
           margin-bottom: 0;
         }
       }
@@ -48,7 +47,7 @@
           margin-bottom: 15px;
         }
         .pages_title {
-          @include lg {
+          @include xl {
             display: none;
           }
         }
@@ -114,14 +113,14 @@
               transform: translateY(-50%);
           }
           .links_name {
-            @include lg{
+            @include xl{
               display: none;
               white-space: nowrap;
 opacity: 0;
 pointer-events: none;
             }
           }
-          @include lg {
+          @include xl {
             display: flex;
             justify-content: center;
           }
@@ -151,7 +150,7 @@ pointer-events: none;
           }
         }
       }
-      @include lg {
+      @include xl {
         display: flex;
         justify-content: center;
         p {

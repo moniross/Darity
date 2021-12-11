@@ -28,7 +28,7 @@ body {
   font-family: $font-secondary, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-size: 17px;
+  font-size: 16.5px;
   letter-spacing: 0.3px;
   color: $color_white;
   background: $color_dark;
@@ -36,6 +36,13 @@ body {
   @include md {
     font-size: 15.5px;
   }
+}
+.main {
+  background-image: url(../img/bg/pattren.png);
+  background-size: coveer;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-bottom: 20px;
 }
 @media (min-width: 1400px) {
   .container,

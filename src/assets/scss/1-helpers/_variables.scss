@@ -7,12 +7,16 @@ $font-secondary: "circular";
 $transition_function: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Typography - font families
-$font_main: $font-secondary, -apple-system, sans-serif, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font_code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font_pre: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font_titles: $font-primary, -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font_main: $font-secondary, -apple-system, sans-serif, BlinkMacSystemFont,
+  Roboto, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font_code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+$font_pre: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
+$font_titles: $font-primary, -apple-system, BlinkMacSystemFont, Roboto,
+  "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Typography - font sizes
 $font_size_xsmall: 12px;
@@ -21,7 +25,7 @@ $font_size_regular: 16px;
 $font_size_large: 22px;
 $font_size_large_mobile: 16.6px;
 
-$font_size_h1: 55px;
+$font_size_h1: 45px;
 $font_size_h1_mobile: 40px;
 
 $font_size_h2: 34px;

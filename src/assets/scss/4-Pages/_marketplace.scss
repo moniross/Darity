@@ -1,50 +1,41 @@
 .marketplace {
-  background-image: url(../img/bg/pattren.png);
-  background-size: coveer;
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin-bottom: 20px;
-  .main_marketplace {
-    position: relative;
-    margin-left: 280px;
-    margin-top: 88px;
-    display: flex;
-    @include xl {
-      margin-left: 120px;
+  display: flex;
+  .hero_marketplace {
+    background-image: url(../img/bg/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include overlay {
+      border-radius: $border_radius;
     }
-    .hero_marketplace {
-      background-image: url(../img/bg/cover.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      @include overlay {
-        border-radius: $border_radius;
-      }
-      .hero_title {
-        max-width: 30rem;
+    .hero_title {
+      font-size: 50px;
+      max-width: 30rem;
+      @include sm {
+        font-size: 45px;
       }
     }
-    .categories {
-      .items {
-        display: flex;
-        .item {
-          background: $color_secondary;
-          color: $color_white;
-          border-radius: 50px;
-          background-image: linear-gradient(#10173e, #10173e),
-            linear-gradient(
-              180deg,
-              rgba(255, 255, 255, 0.19) 0%,
-              rgba(255, 255, 255, 0) 100%
-            );
-          background-origin: border-box;
-          background-clip: content-box, border-box;
-          border: none;
-          padding: 1px;
-          .wrapper {
-            display: flex;
-            align-items: center;
-            padding: 11px 20px;
-          }
+  }
+  .categories {
+    .items {
+      display: flex;
+      .item {
+        background: $color_secondary;
+        color: $color_white;
+        border-radius: 50px;
+        background-image: linear-gradient(#10173e, #10173e),
+          linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.19) 0%,
+            rgba(255, 255, 255, 0) 100%
+          );
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border: none;
+        padding: 1px;
+        .wrapper {
+          display: flex;
+          align-items: center;
+          padding: 11px 20px;
         }
       }
     }

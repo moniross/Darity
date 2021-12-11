@@ -120,7 +120,7 @@ img {
 }
 
 .color_green {
-  color: #36b37e;
+  color: #3ecc91;
 }
 
 .color_dark {
@@ -152,7 +152,7 @@ img {
 }
 
 .bg_green {
-  background-color: #36b37e;
+  background-color: #3ecc91;
 }
 
 .bg_red {
@@ -12247,7 +12247,7 @@ html {
 
 body {
   font-family: "circular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 17px;
+  font-size: 16.5px;
   letter-spacing: 0.3px;
   color: #ffffff;
   background: #060b27;
@@ -12256,6 +12256,14 @@ body {
   body {
     font-size: 15.5px;
   }
+}
+
+.main {
+  background-image: url(../img/bg/pattren.png);
+  background-size: coveer;
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1400px) {
@@ -12417,7 +12425,7 @@ a:hover {
 
 h1 {
   font-size: calc(
-    40px + 15 * ((100vw - 576px) / 1024)
+    40px + 5 * ((100vw - 576px) / 1024)
   );
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -12429,7 +12437,7 @@ h1 {
 }
 @media screen and (min-width: 1600px) {
   h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -13713,6 +13721,44 @@ label:active:after {
       -ms-flex-align: center;
           align-items: center;
 }
+.card_item.three .card_body .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: #7b38ff;
+}
+.card_item.three .card_body .icon i {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.card_item.three .card_body .rank {
+  color: #708299;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.card_item.four {
+  background-image: url(../img/bg/gardient_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 10px;
+}
 
 .menu_categories {
   display: -webkit-box;
@@ -14615,6 +14661,19 @@ label:active:after {
   color: #a5a5a5;
 }
 
+.marketplace,
+.overview {
+  position: relative;
+  margin-left: 280px;
+  margin-top: 88px;
+}
+@media screen and (max-width: 1400px) {
+  .marketplace,
+.overview {
+    margin-left: 120px;
+  }
+}
+
 .section_title {
   margin-bottom: 20px;
 }
@@ -14644,26 +14703,11 @@ label:active:after {
 - 5/ Pages
 =======================*/
 .marketplace {
-  background-image: url(../img/bg/pattren.png);
-  background-size: coveer;
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin-bottom: 20px;
-}
-.marketplace .main_marketplace {
-  position: relative;
-  margin-left: 280px;
-  margin-top: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 1400px) {
-  .marketplace .main_marketplace {
-    margin-left: 120px;
-  }
-}
-.marketplace .main_marketplace .hero_marketplace {
+.marketplace .hero_marketplace {
   background-image: url(../img/bg/cover.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -14672,7 +14716,7 @@ label:active:after {
   transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.marketplace .main_marketplace .hero_marketplace::before {
+.marketplace .hero_marketplace::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -14684,15 +14728,21 @@ label:active:after {
   background: linear-gradient(97.74deg, rgba(6, 11, 39, 0.87) 7.11%, rgba(0, 0, 0, 0) 90.23%);
   border-radius: 20px;
 }
-.marketplace .main_marketplace .hero_marketplace .hero_title {
+.marketplace .hero_marketplace .hero_title {
+  font-size: 50px;
   max-width: 30rem;
 }
-.marketplace .main_marketplace .categories .items {
+@media screen and (max-width: 576px) {
+  .marketplace .hero_marketplace .hero_title {
+    font-size: 45px;
+  }
+}
+.marketplace .categories .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.marketplace .main_marketplace .categories .items .item {
+.marketplace .categories .items .item {
   background: #10173e;
   color: #ffffff;
   border-radius: 50px;
@@ -14703,7 +14753,7 @@ label:active:after {
   border: none;
   padding: 1px;
 }
-.marketplace .main_marketplace .categories .items .item .wrapper {
+.marketplace .categories .items .item .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

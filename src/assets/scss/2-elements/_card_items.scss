@@ -55,6 +55,35 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background-color: $color_brand;
+        i {
+          font-size: 18px;
+          font-weight: bold;
+          color: white;
+        }
+      }
+      .rank {
+        color: $color_text;
+        display: flex;
+        justify-content: flex-end;
+      }
     }
+  }
+  // Card four
+  &.four {
+    background-image: url(../img/bg/gardient_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 20px;
+    border: 1px solid $color_border;
+    border-radius: 10px;
   }
 }

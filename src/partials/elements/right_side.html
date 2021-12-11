@@ -35,17 +35,32 @@
         </div>
         <div class="card_body">
           <div>
-            <div>{{sold}} <span class="color_text">ETH</span></div>
-            <a href="#">
-              <p class="avatars_name color_white">{{avatar_name}}</p>
-            </a>
-            <span class="color_text">@{{collection_name}}</span>
-          </div>
-          <div>
-            <div class="icon">
-              <i class="ri-add-line"></i>
+            <div class="text_sm">
+              {{sold}} <span class="color_text">ETH</span>
             </div>
-            <span class="rank"># {{rank}}</span>
+            <a href="#">
+              <div
+                class="
+                  avatars_name
+                  color_white
+                  d-flex
+                  align-items-center
+                  space-x-5
+                "
+              >
+                <span>{{avatar_name}}</span>
+                <i class="ri-checkbox-circle-line color_green"></i>
+              </div>
+            </a>
+            <div class="color_text">@{{collection_name}}</div>
+          </div>
+          <div class="space-y-10">
+            <a href="#" class="icon">
+              <i class="ri-add-line"></i>
+            </a>
+            <div>
+              <span class="rank">#{{rank}}</span>
+            </div>
           </div>
         </div>
       </div>

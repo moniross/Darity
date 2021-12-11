@@ -33,7 +33,7 @@ items2:
   # ==========
   - img: "4"
     title: "Punlk #1"
-    avatar_name: "makinzi_jamy."
+    avatar_name: "makinzi_jamy"
     date: "1 days"
     border: "hr"
   # ==========
@@ -52,18 +52,18 @@ items3:
   # ==========
   - img: "creator"
     sold: "16.58"
-    avatar_name: "makinzi_jamy."
-    collection_name: "fennouni."
+    avatar_name: "makinzi_jamy"
+    collection_name: "fennouni"
     rank: "1"
   # ==========
   - img: "creator"
     sold: "16.58"
-    avatar_name: "makinzi_jamy."
-    collection_name: "fennouni."
+    avatar_name: "makinzi_jamy"
+    collection_name: "fennouni"
     rank: "2"
   # ==========
   - img: "creator"
     sold: "16.58"
-    avatar_name: "makinzi_jamy."
+    avatar_name: "makinzi_jamy"
     collection_name: "fennouni"
     rank: "3"

@@ -12264,6 +12264,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 @media (min-width: 1400px) {
@@ -13883,12 +13884,6 @@ label:active:after {
 }
 
 .sidebar {
-  position: fixed;
-  top: 88px;
-  left: 15px;
-  height: calc(100vh - 88px);
-  max-height: 742px;
-  width: 260px;
   background-color: #10173e;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
@@ -13904,7 +13899,6 @@ label:active:after {
   }
 }
 .sidebar .sidabar_content {
-  width: 260px;
   height: 100%;
   padding: 22px;
   display: -webkit-box;
@@ -14664,14 +14658,6 @@ label:active:after {
 .marketplace,
 .overview {
   position: relative;
-  margin-left: 280px;
-  margin-top: 88px;
-}
-@media screen and (max-width: 1400px) {
-  .marketplace,
-.overview {
-    margin-left: 120px;
-  }
 }
 
 .section_title {
@@ -14702,11 +14688,6 @@ label:active:after {
 /* ===================
 - 5/ Pages
 =======================*/
-.marketplace {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .marketplace .hero_marketplace {
   background-image: url(../img/bg/cover.png);
   background-repeat: no-repeat;

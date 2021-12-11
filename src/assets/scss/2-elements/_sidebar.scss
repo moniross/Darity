@@ -1,163 +1,150 @@
 .sidebar {
-  position: fixed;
-  top: 88px;
-  left: 15px;
-  height: calc(100vh - 88px);
-  max-height: 742px;
-  width: 260px;
-  background-color: $color_secondary;
-  background-image: linear-gradient($color_secondary, $color_secondary),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.19) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  border: none;
-  border-radius: $border_radius;
-  z-index: 1;
-  @include xl {
-    width: 100px;
-  }
-  .sidabar_content {
-    width: 260px;
-    height: 100%;
-    padding: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: $color_secondary;
+    background-image: linear-gradient($color_secondary, $color_secondary), linear-gradient( 180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: none;
+    border-radius: $border_radius;
+    z-index: 1;
     @include xl {
-      width: 100px;
+        width: 100px;
     }
-    .categories {
-      overflow: auto;
-      scrollbar-width: thin;
-      .marketplace_pages {
-        margin-bottom: 30px;
+    .sidabar_content {
+        height: 100%;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @include xl {
-          margin-bottom: 0;
+            width: 100px;
         }
-      }
-      .marketplace_pages,
-      .account_pages {
-        .pages_title {
-          color: $color_text;
-          font-weight: normal;
-          margin-bottom: 15px;
-        }
-        .pages_title {
-          @include xl {
-            display: none;
-          }
-        }
-        ul {
-          li {
-            margin-bottom: 5px;
-            &:last-of-type {
-              margin-bottom: 0;
-            }
-            a {
-              display: flex;
-              align-items: center;
-              color: $color_text;
-              padding: 5px 15px;
-              border-radius: 12px;
-              transition: all 0.25s $transition_function;
-              p {
-                transition: all 0.25s $transition_function;
-              }
-              &:hover {
-                background-color: $color_brand;
-                color: white;
-                p {
-                  color: white;
+        .categories {
+            overflow: auto;
+            scrollbar-width: thin;
+            .marketplace_pages {
+                margin-bottom: 30px;
+                @include xl {
+                    margin-bottom: 0;
                 }
-              }
-              i {
-                font-size: 24px;
-              }
-              &.active {
-                color: $color_white;
+            }
+            .marketplace_pages,
+            .account_pages {
+                .pages_title {
+                    color: $color_text;
+                    font-weight: normal;
+                    margin-bottom: 15px;
+                }
+                .pages_title {
+                    @include xl {
+                        display: none;
+                    }
+                }
+                ul {
+                    li {
+                        margin-bottom: 5px;
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: $color_text;
+                            padding: 5px 15px;
+                            border-radius: 12px;
+                            transition: all 0.25s $transition_function;
+                            p {
+                                transition: all 0.25s $transition_function;
+                            }
+                            &:hover {
+                                background-color: $color_brand;
+                                color: white;
+                                p {
+                                    color: white;
+                                }
+                            }
+                            i {
+                                font-size: 24px;
+                            }
+                            &.active {
+                                color: $color_white;
+                                p {
+                                    color: $color_white;
+                                }
+                                &:hover {
+                                    color: $color_white;
+                                    p {
+                                        color: $color_white;
+                                    }
+                                }
+                            }
+                            .tooltip {
+                                position: absolute;
+                                top: -20px;
+                                left: calc(100% + 12px);
+                                z-index: 3;
+                                background: #fff;
+                                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+                                padding: 6px 12px;
+                                border-radius: 4px;
+                                font-size: 15px;
+                                font-weight: 400;
+                                opacity: 0;
+                                white-space: nowrap;
+                                pointer-events: none;
+                                transition: 0s;
+                            }
+                            &:hover .tooltip {
+                                opacity: 1;
+                                pointer-events: auto;
+                                transition: all 0.4s ease;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                            .links_name {
+                                @include xl {
+                                    display: none;
+                                    white-space: nowrap;
+                                    opacity: 0;
+                                    pointer-events: none;
+                                }
+                            }
+                            @include xl {
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logout {
+            margin-top: 40px;
+            a {
+                display: flex;
+                align-items: center;
+                color: $color_text;
+                transition: all 0.25s $transition_function;
+                i {
+                    font-size: 24px;
+                    margin-right: 5px;
+                }
                 p {
-                  color: $color_white;
+                    transition: all 0.25s $transition_function;
                 }
                 &:hover {
-                  color: $color_white;
-                  p {
-                    color: $color_white;
-                  }
+                    color: $color_red;
+                    p {
+                        color: $color_red;
+                    }
                 }
-              }
-              .tooltip {
-                position: absolute;
-                top: -20px;
-                left: calc(100% + 12px);
-                z-index: 3;
-                background: #fff;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-                padding: 6px 12px;
-                border-radius: 4px;
-                font-size: 15px;
-                font-weight: 400;
-                opacity: 0;
-                white-space: nowrap;
-                pointer-events: none;
-                transition: 0s;
             }
-            &:hover .tooltip {
-              opacity: 1;
-              pointer-events: auto;
-              transition: all 0.4s ease;
-              top: 50%;
-              transform: translateY(-50%);
-          }
-          .links_name {
-            @include xl{
-              display: none;
-              white-space: nowrap;
-opacity: 0;
-pointer-events: none;
+            @include xl {
+                display: flex;
+                justify-content: center;
+                p {
+                    display: none;
+                }
             }
-          }
-          @include xl {
-            display: flex;
-            justify-content: center;
-          }
-            }
-          }
         }
-      }
     }
-    .logout {
-      margin-top: 40px;
-      a {
-        display: flex;
-        align-items: center;
-        color: $color_text;
-        transition: all 0.25s $transition_function;
-        i {
-          font-size: 24px;
-          margin-right: 5px;
-        }
-        p {
-          transition: all 0.25s $transition_function;
-        }
-        &:hover {
-          color: $color_red;
-          p {
-            color: $color_red;
-          }
-        }
-      }
-      @include xl {
-        display: flex;
-        justify-content: center;
-        p {
-          display: none;
-        }
-      }
-    }
-  }
-
 }

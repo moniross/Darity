@@ -1,32 +1,31 @@
 .marketplace,
 .overview {
-  position: relative;
-  margin-left: 280px;
-  margin-top: 88px;
-  @include xl {
-    margin-left: 120px;
-  }
+    position: relative;
 }
+
 .section_title {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 .section__head {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 // Trending auctions
 .trending_auctions {
-  position: relative;
+    position: relative;
 }
+
 // Aside marketplace
 .aside_marketplace {
-  min-width: 330px;
-  .recently_added {
-    background-image: url(../img/bg/gardient_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    padding: 20px;
-    border: 1px solid $color_border;
-    border-radius: 10px;
-  }
+    min-width: 330px;
+    .recently_added {
+        background-image: url(../img/bg/gardient_bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 20px;
+        border: 1px solid $color_border;
+        border-radius: 10px;
+    }
 }

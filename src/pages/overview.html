@@ -1,46 +1,13 @@
----
-pages_title: "NFT dashboard - Overview"
----
-
-{{> header}}
+--- pages_title: "NFT dashboard - Overview" --- {{> header}}
 <div class="main">
-  <div class="container-fluid">
-    <div class="content_wrapper">
-      {{> sidebar}}
-      <div class="overview">
-        <h1 class="section_title">Overview</h1>
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="card_item four space-y-10">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <i class="ri-stack-line"></i>
-                  <span>Total Items</span>
-                </div>
-                <div>
-                  <span class="color_green">View Report</span>
-                </div>
-              </div>
-              <span class="items">3,456</span>
-              <span>On listing</span>
-              <div class="hr"></div>
-              <div class="d-flex justify-content-between">
-                <span>Active</span>
-                <span>3.220</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>In Review</span>
-                <span>2</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span>Rejected</span>
-                <span>234</span>
-              </div>
-              <canvas id="myChart" width="400" height="400"></canvas>
+            <div class="col-lg-2">
+                {{> sidebar}}
             </div>
-          </div>
+            <div class="col-lg-7">
+                {{> overview}}
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>

@@ -7,8 +7,15 @@
       border: none !important;
       th {
         border: none !important;
+        padding-top: 0;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        &:first-child {
+          padding-left: 0;
+        }
         span {
-          font-weight: normal;
+          font-weight: bold;
           color: $color_text;
           vertical-align: middle;
         }
@@ -23,9 +30,6 @@
         border: none !important;
         background: $color_secondary;
         padding: 20px 30px;
-        span {
-          font-weight: bold;
-        }
       }
     }
   }

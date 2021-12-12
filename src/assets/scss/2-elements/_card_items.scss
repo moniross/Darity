@@ -86,7 +86,6 @@
     border: 1px solid $color_border;
     border-radius: 10px;
     .icon {
-      color: $color_green2;
       font-weight: bold;
       font-size: 19px;
     }
@@ -107,7 +106,7 @@
       }
       &.up {
         background-color: $color_icon_green;
-        color: $color_green2;
+        color: $color_blue;
       }
       &.down {
         background-color: $color_icon_red;

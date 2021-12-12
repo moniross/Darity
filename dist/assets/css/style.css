@@ -123,6 +123,10 @@ img {
   color: #01c5ba;
 }
 
+.color_blue {
+  color: #72e6ff;
+}
+
 .color_dark {
   color: #060b27;
 }
@@ -13761,7 +13765,6 @@ label:active:after {
   border-radius: 10px;
 }
 .card_item.four .icon {
-  color: #01c5ba;
   font-weight: bold;
   font-size: 19px;
 }
@@ -13786,7 +13789,7 @@ label:active:after {
 }
 .card_item.four .statistics.up {
   background-color: #064462;
-  color: #01c5ba;
+  color: #72e6ff;
 }
 .card_item.four .statistics.down {
   background-color: #561857;
@@ -14107,9 +14110,16 @@ label:active:after {
 }
 .custom_table thead tr th {
   border: none !important;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.custom_table thead tr th:first-child {
+  padding-left: 0;
 }
 .custom_table thead tr th span {
-  font-weight: normal;
+  font-weight: bold;
   color: #9c99ae;
   vertical-align: middle;
 }
@@ -14123,9 +14133,6 @@ label:active:after {
   border: none !important;
   background: #10173e;
   padding: 20px 30px;
-}
-.custom_table tbody tr td span {
-  font-weight: bold;
 }
 
 table tbody td:first-child {

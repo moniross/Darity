@@ -85,5 +85,34 @@
     padding: 20px;
     border: 1px solid $color_border;
     border-radius: 10px;
+    .icon {
+      color: $color_green2;
+      font-weight: bold;
+      font-size: 19px;
+    }
+    .items_number,
+    .sales_number {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .statistics {
+      display: flex;
+      align-items: center;
+
+      padding: 3.5px 8px;
+      border-radius: 50px;
+      font-size: 14px;
+      i {
+        font-weight: bold;
+      }
+      &.up {
+        background-color: $color_icon_green;
+        color: $color_green2;
+      }
+      &.down {
+        background-color: $color_icon_red;
+        color: $color_pink;
+      }
+    }
   }
 }

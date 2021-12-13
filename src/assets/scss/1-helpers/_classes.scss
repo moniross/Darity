@@ -23,6 +23,12 @@
 .color_green {
   color: $color_green;
 }
+.color_pink {
+  color: $color_pink;
+}
+.color_yellow {
+  color: $color_yellow;
+}
 .color_blue {
   color: $color_blue;
 }
@@ -232,6 +238,9 @@
 
 .mr-helf {
   margin-right: 0.5px;
+}
+.mr-5px {
+  margin-right: 5px;
 }
 .mr-100 {
   margin-right: 10px;

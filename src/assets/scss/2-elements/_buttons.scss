@@ -12,13 +12,13 @@ div.button {
   min-height: 20px;
   line-height: 20px;
   @include animate();
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   vertical-align: middle;
   outline: none;
   position: relative;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 200px;
   overflow: hidden;
   will-change: transform, box-shadow;
   &:not(.btn-outline):not(.btn-flat):not(.btn-link) {
@@ -80,14 +80,14 @@ p a.btn {
 - - - - - - - - - 2/ Button variations
 =======================================================*/
 .btn_primary {
-  color: $color_white;
+  color: $color_black;
   border: none;
   transition: all 0.4s ease-in-out;
   background: $color_brand;
   position: relative;
 
   &:hover {
-    color: $color_white;
+    color: $color_black;
     border: none;
   }
 }

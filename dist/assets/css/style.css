@@ -123,6 +123,14 @@ img {
   color: #01c5ba;
 }
 
+.color_pink {
+  color: #ff72d2;
+}
+
+.color_yellow {
+  color: #ffd166;
+}
+
 .color_blue {
   color: #72e6ff;
 }
@@ -375,6 +383,10 @@ img {
 /* ------------------------------------ margin right*/
 .mr-helf {
   margin-right: 0.5px;
+}
+
+.mr-5px {
+  margin-right: 5px;
 }
 
 .mr-100 {
@@ -12566,13 +12578,13 @@ div.button {
   line-height: 20px;
   -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
   vertical-align: middle;
   outline: none;
   position: relative;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 200px;
   overflow: hidden;
   will-change: transform, box-shadow;
 }
@@ -12649,7 +12661,7 @@ p a.btn:hover {
 - - - - - - - - - 2/ Button variations
 =======================================================*/
 .btn_primary {
-  color: #ffffff;
+  color: #080134;
   border: none;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -12657,7 +12669,7 @@ p a.btn:hover {
   position: relative;
 }
 .btn_primary:hover {
-  color: #ffffff;
+  color: #080134;
   border: none;
 }
 

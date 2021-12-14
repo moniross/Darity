@@ -80,14 +80,14 @@ p a.btn {
 - - - - - - - - - 2/ Button variations
 =======================================================*/
 .btn_primary {
-  color: $color_black;
+  color: white;
   border: none;
   transition: all 0.4s ease-in-out;
   background: $color_brand;
   position: relative;
 
   &:hover {
-    color: $color_black;
+    color: white;
     border: none;
   }
 }

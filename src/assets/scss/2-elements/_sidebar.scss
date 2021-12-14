@@ -14,14 +14,16 @@
   @include xl {
     width: 100px;
   }
+
   .sidabar_content {
     height: 100%;
-    padding: 22px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     @include xl {
       width: 100px;
+      padding: 16px;
     }
     .categories {
       overflow: auto;

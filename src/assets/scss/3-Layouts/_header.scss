@@ -227,13 +227,23 @@
   }
   .header__avatar {
     border-radius: $border_radius * 100;
-    border: solid 1px $color_stroke;
-    background: $color_light;
+
+    background: $color_secondary;
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     z-index: 9;
+    background-image: linear-gradient($color_secondary, $color_secondary),
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.19) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: none;
+    padding: 1px;
     @include sm_screen {
       display: none !important;
     }
@@ -249,17 +259,31 @@
     }
     .avatar_popup {
       position: absolute;
-      padding: 30px;
+
       top: 6rem;
+      right: 15px;
       overflow: hidden;
       border-radius: 10px;
-      background: $color_white;
+      background: $color_secondary;
       transition: all 0.25s ease-in-out;
       box-shadow: $shadow_1;
       border: solid 1px $color_stroke;
       visibility: hidden;
       opacity: 0;
       transform: translateY(-1rem);
+      background-image: linear-gradient($color_secondary, $color_secondary),
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.19) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      border: none;
+      padding: 1px;
+      .avatar_wrap {
+        padding: 30px;
+      }
       &.visible {
         visibility: visible;
         opacity: 1;
@@ -281,32 +305,67 @@
             color: $color_brand;
           }
         }
+        .logout {
+          &:hover {
+            color: $color_red;
+          }
+        }
       }
     }
   }
   .header__notifications {
     .js-notifications-icon {
+      height: 38px;
+      width: 38px;
+
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 0px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $color_red;
+      }
     }
     @include sm_screen {
       display: none !important;
     }
     .notifications_popup {
       position: absolute;
-      padding: 30px;
+      padding: 1px;
       top: 6rem;
+      right: 15px;
       overflow: hidden;
       border-radius: 10px;
-      background: $color_white;
+      background: $color_secondary;
       transition: all 0.25s ease-in-out;
       box-shadow: $shadow_1;
-      border: solid 1px $color_stroke;
       visibility: hidden;
       opacity: 0;
       transform: translateY(-1rem);
       max-width: 30rem;
       z-index: 9;
-
+      background-image: linear-gradient($color_secondary, $color_secondary),
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.19) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      border: none;
+      .notifications_wrap {
+        padding: 30px;
+      }
       &.visible {
         visibility: visible;
         opacity: 1;
@@ -321,10 +380,10 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
-        background: $color_brand;
+        background: $color_red;
       }
 
       a {
@@ -340,6 +399,7 @@
         padding: 8px 16px 6px;
         font-size: 14px;
         background: $color_white;
+        color: $color_brand;
       }
       .thumb {
         height: 3rem;

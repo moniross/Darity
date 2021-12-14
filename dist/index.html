@@ -52,34 +52,39 @@
           <div class="js-notifications-icon">
             <i class="ri-notification-3-line"></i>
           </div>
-          <div class="notifications_popup space-y-20">
-            <div class="d-flex justify-content-between">
-              <h5>Notifications</h5>
-              <a href="Activity.html" class="badge color_white">View all</a>
-            </div>
-            <div
-              class="
-                item
-                space-x-20
-                d-flex
-                justify-content-between
-                align-items-center
-              "
-            >
-              <img
-                class="thumb"
-                src="assets/img/notifications/1.png"
-                alt="..."
-              />
-              <div class="details">
-                <a href="activity.html">
-                  <h6>Money revieved</h6>
-                </a>
-                <p>0.6 ETH</p>
+          <div class="notifications_popup">
+            <div class="notifications_wrap space-y-20">
+              <div class="d-flex justify-content-between">
+                <h5>Notifications</h5>
+                <a href="#" class="badge color_white">View all</a>
               </div>
-              <span class="circle"></span>
+              <div
+                class="
+                  item
+                  space-x-20
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                "
+              >
+                <img
+                  class="thumb"
+                  src="../../assets/img/notifications/1.png"
+                  alt="..."
+                />
+                <div class="details">
+                  <a href="activity.html">
+                    <h6>Money revieved</h6>
+                  </a>
+                  <p>0.6 ETH</p>
+                </div>
+                <span class="circle"></span>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="header__btns">
+          <a class="btn btn_primary btn-sm" href="#">Create</a>
         </div>
         <div class="header__avatar">
           <img
@@ -91,31 +96,39 @@
             <span>2.45 <strong>ETH</strong> </span>
           </div>
 
-          <div class="avatar_popup space-y-20">
-            <div class="d-flex align-items-center justify-content-between">
-              <span> 13b9ebda035r178... </span>
-              <a href="/" class="ml-2">
-                <i class="ri-file-copy-line"></i>
-              </a>
-            </div>
-            <div class="d-flex align-items-center space-x-10">
-              <img class="coin" src="assets/img/logos/coin.svg" alt="/" />
-              <div class="info">
-                <p class="text-sm font-book text-gray-400">Balance</p>
-                <p class="w-full text-sm font-bold text-green-500">16.58 ETH</p>
+          <div class="avatar_popup">
+            <div class="avatar_wrap space-y-20">
+              <div class="d-flex align-items-center justify-content-between">
+                <span> 13b9ebda035r178... </span>
+                <a href="/" class="ml-10">
+                  <i class="ri-file-copy-line"></i>
+                </a>
               </div>
-            </div>
-            <div class="hr"></div>
-            <div class="links space-y-10">
-              <a href="#">
-                <i class="ri-landscape-line"></i> <span> My items</span>
-              </a>
-              <a href="edit_profile.html">
-                <i class="ri-pencil-line"></i> <span> Edit Profile</span>
-              </a>
-              <a href="#">
-                <i class="ri-logout-circle-line"></i> <span> Logout</span>
-              </a>
+              <div class="d-flex align-items-center space-x-10">
+                <img
+                  class="coin"
+                  src="../../assets/img/icons/coin.svg"
+                  alt="/"
+                />
+                <div class="info">
+                  <p class="text-sm font-book text-gray-400">Balance</p>
+                  <p class="w-full text-sm font-bold text-green-500">
+                    16.58 ETH
+                  </p>
+                </div>
+              </div>
+              <div class="hr"></div>
+              <div class="links space-y-10">
+                <a href="#">
+                  <i class="ri-landscape-line"></i> <span> My items</span>
+                </a>
+                <a href="edit_profile.html">
+                  <i class="ri-pencil-line"></i> <span> Edit Profile</span>
+                </a>
+                <a href="#" class="logout">
+                  <i class="ri-logout-circle-line"></i> <span> Logout</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -280,8 +293,8 @@
 </header>
 <div class="main">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-auto"><!-- sidebar -->
+    <div class="wrap space-x-20">
+      <div ><!-- sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidabar_content">
     <div class="categories">
@@ -365,7 +378,7 @@
   </div>
 </div>
 </div>
-      <div class="col-lg-7"><div class="marketplace">
+      <div ><div class="marketplace">
 
     <div class="box is_big hero_marketplace space-y-20">
         <h1 class="hero_title">Create your NFT Marketplace</h1>
@@ -411,11 +424,17 @@
     <div class="trending_auctions mt-20 space-x-20">
       <h2 class="section_title">Trending Auctions</h2>
       <div class="row m-0 mb-30_reset">
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div class="card_item one space-y-10">
             <div class="card_head">
-              <img src="../../assets/img/items/item1.png" alt="nft img" />
+              <a href="#" class="card_img">
+                <img src="../../assets/img/items/item1.png" alt="nft img" />
+              </a>
+              <div class="icon">
+                <i class="ri-image-line"></i>
+              </div>
             </div>
+    
             <div class="card_body space-y-10">
               <div class="d-flex justify-content-between">
                 <h6>
@@ -463,11 +482,17 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div class="card_item one space-y-10">
             <div class="card_head">
-              <img src="../../assets/img/items/item2.png" alt="nft img" />
+              <a href="#" class="card_img">
+                <img src="../../assets/img/items/item2.png" alt="nft img" />
+              </a>
+              <div class="icon">
+                <i class="ri-image-line"></i>
+              </div>
             </div>
+    
             <div class="card_body space-y-10">
               <div class="d-flex justify-content-between">
                 <h6>
@@ -515,11 +540,17 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-6 col-md-6">
+        <div class="col-lg-4 col-md-6">
           <div class="card_item one space-y-10">
             <div class="card_head">
-              <img src="../../assets/img/items/item3.png" alt="nft img" />
+              <a href="#" class="card_img">
+                <img src="../../assets/img/items/item3.png" alt="nft img" />
+              </a>
+              <div class="icon">
+                <i class="ri-image-line"></i>
+              </div>
             </div>
+    
             <div class="card_body space-y-10">
               <div class="d-flex justify-content-between">
                 <h6>
@@ -572,7 +603,7 @@
 
 
 </div></div>
-      <div class="col-lg-auto"><div class="aside_marketplace space-y-30">
+      <div ><div class="aside_marketplace space-y-30">
   <div>
     <h2 class="section_title">Recently Added</h2>
     <div class="recently_added space-y-15">
@@ -580,7 +611,7 @@
         <div class="card_head">
           <img src="../../assets/img/items/item4.png" alt="nft" />
         </div>
-        <div class="card_body">
+        <div class="card_body space-x-20">
           <div>
             <a href="#">
               <h6 class="card_title">Punlk #1</h6>
@@ -599,7 +630,7 @@
         <div class="card_head">
           <img src="../../assets/img/items/item5.png" alt="nft" />
         </div>
-        <div class="card_body">
+        <div class="card_body space-x-20">
           <div>
             <a href="#">
               <h6 class="card_title">Punlk #2</h6>
@@ -618,7 +649,7 @@
         <div class="card_head">
           <img src="../../assets/img/items/item6.png" alt="nft" />
         </div>
-        <div class="card_body">
+        <div class="card_body space-x-20">
           <div>
             <a href="#">
               <h6 class="card_title">Punlk #3</h6>
@@ -747,6 +778,7 @@
   </div>
 </div>
 </div>
+      </div>
     </div>
   </div>
 </div>

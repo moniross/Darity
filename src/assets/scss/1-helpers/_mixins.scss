@@ -3,7 +3,6 @@
 // =======================================================
 // - - - - - - - - -Media Query > mixins
 // ==========================================================
-@use "sass:math";
 
 @mixin xs {
   @media screen and (max-width: 375px) {
@@ -28,9 +27,8 @@
   }
 }
 
-
 @mixin max-lg {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1260px) {
     @content;
   }
 }
@@ -647,11 +645,11 @@
 ) {
   font-size: calc(
     #{$min-font-size} + #{(
-        math.div($max-font-size, $max-font-size * 0 + 1) -
-          math.div($min-font-size, $min-font-size * 0 + 1)
+        ($max-font-size/$max-font-size * 0 + 1) -
+          ($min-font-size/$min-font-size * 0 + 1)
       )} * ((100vw - #{$lower-range}) / #{(
-            math.div($upper-range, $upper-range * 0 + 1) -
-              math.div($lower-range, $lower-range * 0 + 1)
+            ($upper-range/$upper-range * 0 + 1) -
+              ($lower-range/$lower-range * 0 + 1)
           )})
   );
 

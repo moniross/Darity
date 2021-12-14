@@ -32,9 +32,12 @@
     "helper-markdown": "^1.0.0",
     "html-tag": "^2.0.0",
     "jquery": "^3.6.0",
-    "node-sass": "^6.0.1",
     "panini": "^1.7.2",
     "remixicon": "^2.5.0",
-    "sass": "^1.43.5"
+    "sass": "^1.45.0"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "sass-loader": "^12.4.0"
   }
 }

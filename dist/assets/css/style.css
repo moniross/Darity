@@ -12660,7 +12660,6 @@ p a.btn:hover {
 
 .btn_lg {
   padding: 7px 25px;
-  font-size: 19px;
   line-height: 1.7;
 }
 
@@ -12716,6 +12715,15 @@ p a.btn:hover {
   color: #ffffff;
 }
 
+.btn_verify {
+  color: #36b37e;
+  background-color: rgba(54, 179, 126, 0.22);
+}
+.btn_verify:hover {
+  color: #36b37e;
+  background-color: rgba(54, 179, 126, 0.22);
+}
+
 .box {
   padding: 40px 30px;
   border-radius: 20px;
@@ -12733,6 +12741,27 @@ p a.btn:hover {
   -o-border-image: linear-gradient(to right, darkblue, darkorchid) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(darkblue), to(darkorchid)) 1;
      border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+.box.style_two {
+  background-image: url(../img/bg/gardient_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  padding: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -12768,25 +12797,23 @@ select,
 textarea,
 .custom-select {
   background: 0 0;
-  color: #9c99ae;
-  background-color: #10173e;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.04);
   border: none;
   width: 100%;
   line-height: 1.5;
   font-weight: 400;
-  font-size: inherit;
+  font-size: 16px;
   border-radius: 12px;
   position: relative;
   -webkit-appearance: none;
   -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   outline: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
   border: none;
-  padding: 1px;
+  padding: 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media screen and (max-width: 576px) {
   input[type=text],
@@ -12821,8 +12848,8 @@ input[type=number]:focus,
 select:focus,
 textarea:focus,
 .custom-select:focus {
-  background-color: #ffffff !important;
-  border: 1px solid linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%) !important;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.04);
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -12834,8 +12861,7 @@ input[type=number]:hover,
 select:hover,
 textarea:hover,
 .custom-select:hover {
-  background-color: #ffffff;
-  border: solid 1px linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 @media screen and (max-width: 576px) {
@@ -12848,6 +12874,10 @@ textarea:hover,
   .form-select {
     font-size: 13px;
   }
+}
+
+.input_wrap {
+  padding: 20px;
 }
 
 .form-group {
@@ -13928,7 +13958,7 @@ label:active:after {
   border: 1px solid rgba(255, 255, 255, 0.29);
   border-radius: 10px;
   width: 60px;
-  height: 126px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14929,7 +14959,7 @@ table tbody td:last-child {
 }
 
 .section__head {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .trending_auctions {
@@ -15022,5 +15052,25 @@ table tbody td:last-child {
       -ms-flex-align: center;
           align-items: center;
   padding: 11px 20px;
+}
+
+.login {
+  margin-top: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.login .login_wrap {
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */

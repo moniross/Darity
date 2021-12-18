@@ -1,150 +1,134 @@
 .sidebar {
-    background-color: $color_secondary;
-    background-image: linear-gradient($color_secondary, $color_secondary), linear-gradient( 180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border: none;
-    border-radius: $border_radius;
-    z-index: 1;
+  background-color: $color_secondary;
+  background-image: linear-gradient($color_secondary, $color_secondary),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.19) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: none;
+  border-radius: $border_radius;
+  z-index: 1;
+  @include xl {
+    width: 100px;
+  }
+  .sidabar_content {
+    height: 100%;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @include xl {
-        width: 100px;
+      width: 100px;
     }
-    .sidabar_content {
-        height: 100%;
-        padding: 22px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .categories {
+      overflow: auto;
+      scrollbar-width: thin;
+      .marketplace_pages {
+        margin-bottom: 30px;
         @include xl {
-            width: 100px;
+          margin-bottom: 0;
         }
-        .categories {
-            overflow: auto;
-            scrollbar-width: thin;
-            .marketplace_pages {
-                margin-bottom: 30px;
-                @include xl {
-                    margin-bottom: 0;
-                }
-            }
-            .marketplace_pages,
-            .account_pages {
-                .pages_title {
-                    color: $color_text;
-                    font-weight: normal;
-                    margin-bottom: 15px;
-                }
-                .pages_title {
-                    @include xl {
-                        display: none;
-                    }
-                }
-                ul {
-                    li {
-                        margin-bottom: 5px;
-                        &:last-of-type {
-                            margin-bottom: 0;
-                        }
-                        a {
-                            display: flex;
-                            align-items: center;
-                            color: $color_text;
-                            padding: 5px 15px;
-                            border-radius: 12px;
-                            transition: all 0.25s $transition_function;
-                            p {
-                                transition: all 0.25s $transition_function;
-                            }
-                            &:hover {
-                                background-color: $color_brand;
-                                color: white;
-                                p {
-                                    color: white;
-                                }
-                            }
-                            i {
-                                font-size: 24px;
-                            }
-                            &.active {
-                                color: $color_white;
-                                p {
-                                    color: $color_white;
-                                }
-                                &:hover {
-                                    color: $color_white;
-                                    p {
-                                        color: $color_white;
-                                    }
-                                }
-                            }
-                            .tooltip {
-                                position: absolute;
-                                top: -20px;
-                                left: calc(100% + 12px);
-                                z-index: 3;
-                                background: #fff;
-                                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-                                padding: 6px 12px;
-                                border-radius: 4px;
-                                font-size: 15px;
-                                font-weight: 400;
-                                opacity: 0;
-                                white-space: nowrap;
-                                pointer-events: none;
-                                transition: 0s;
-                            }
-                            &:hover .tooltip {
-                                opacity: 1;
-                                pointer-events: auto;
-                                transition: all 0.4s ease;
-                                top: 50%;
-                                transform: translateY(-50%);
-                            }
-                            .links_name {
-                                @include xl {
-                                    display: none;
-                                    white-space: nowrap;
-                                    opacity: 0;
-                                    pointer-events: none;
-                                }
-                            }
-                            @include xl {
-                                display: flex;
-                                justify-content: center;
-                            }
-                        }
-                    }
-                }
-            }
+      }
+      .marketplace_pages,
+      .account_pages {
+        .pages_title {
+          color: $color_text;
+          font-weight: normal;
+          margin-bottom: 15px;
         }
-        .logout {
-            margin-top: 40px;
+        .pages_title {
+          @include xl {
+            display: none;
+          }
+        }
+        ul {
+          li {
+            margin-bottom: 5px;
+            &:last-of-type {
+              margin-bottom: 0;
+            }
             a {
-                display: flex;
-                align-items: center;
-                color: $color_text;
+              display: flex;
+              align-items: center;
+              color: $color_text;
+              padding: 5px 15px;
+              border-radius: 12px;
+              transition: all 0.25s $transition_function;
+              p {
                 transition: all 0.25s $transition_function;
-                i {
-                    font-size: 24px;
-                    margin-right: 5px;
-                }
+              }
+              &:hover {
+                background-color: $color_brand;
+                color: white;
                 p {
-                    transition: all 0.25s $transition_function;
+                  color: white;
+                }
+              }
+              i {
+                font-size: 24px;
+              }
+              &.active {
+                color: $color_white;
+                p {
+                  color: $color_white;
                 }
                 &:hover {
-                    color: $color_red;
-                    p {
-                        color: $color_red;
-                    }
+                  color: $color_white;
+                  p {
+                    color: $color_white;
+                  }
                 }
-            }
-            @include xl {
+              }
+
+              .links_name {
+                font-size: 16.5px;
+                @include xl {
+                  display: none;
+                  white-space: nowrap;
+                  opacity: 0;
+                  pointer-events: none;
+                }
+              }
+              @include xl {
                 display: flex;
                 justify-content: center;
-                p {
-                    display: none;
-                }
+              }
             }
+          }
         }
+      }
     }
+    .logout {
+      margin-top: 208px;
+      a {
+        display: flex;
+        align-items: center;
+        color: $color_text;
+        transition: all 0.25s $transition_function;
+        i {
+          font-size: 24px;
+          margin-right: 5px;
+        }
+        p {
+          transition: all 0.25s $transition_function;
+        }
+        &:hover {
+          color: $color_red;
+          p {
+            color: $color_red;
+          }
+        }
+      }
+      @include xl {
+        display: flex;
+        justify-content: center;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
 }

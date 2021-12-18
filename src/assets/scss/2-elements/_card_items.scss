@@ -85,5 +85,66 @@
     padding: 20px;
     border: 1px solid $color_border;
     border-radius: 10px;
+    .icon {
+      font-weight: bold;
+      font-size: 19px;
+    }
+    .items_number,
+    .sales_number {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .statistics {
+      display: flex;
+      align-items: center;
+
+      padding: 3.5px 8px;
+      border-radius: 50px;
+      font-size: 14px;
+      i {
+        font-weight: bold;
+      }
+      &.up {
+        background-color: $color_icon_green;
+        color: $color_blue;
+      }
+      &.down {
+        background-color: $color_icon_red;
+        color: $color_pink;
+      }
+    }
+  }
+  // Card five
+  &.five {
+    background-color: $color_secondary;
+    padding: 15px;
+    border: 1px solid $color_border;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .items_number {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .icon {
+      background-image: url(../img/bg/gardient_bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      padding: 20px;
+      border: 1px solid $color_border;
+      border-radius: 10px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        color: white;
+        font-size: 28px;
+        font-weight: normal;
+      }
+    }
   }
 }

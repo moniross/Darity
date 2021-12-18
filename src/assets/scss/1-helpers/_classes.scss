@@ -23,6 +23,15 @@
 .color_green {
   color: $color_green;
 }
+.color_pink {
+  color: $color_pink;
+}
+.color_yellow {
+  color: $color_yellow;
+}
+.color_blue {
+  color: $color_blue;
+}
 .color_dark {
   color: $color_dark;
 }
@@ -72,7 +81,7 @@
   font-size: 72px;
 }
 .txt_lg {
-  font-size: 23px;
+  font-size: 20px;
   &._bold {
     font-family: $font-primary;
   }
@@ -229,6 +238,9 @@
 
 .mr-helf {
   margin-right: 0.5px;
+}
+.mr-5px {
+  margin-right: 5px;
 }
 .mr-100 {
   margin-right: 10px;

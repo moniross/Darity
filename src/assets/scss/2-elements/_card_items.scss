@@ -2,13 +2,21 @@
   // Card one
   &.one {
     margin-bottom: 30px;
+    max-width: 280px;
+    @include sm {
+      margin-left: auto;
+      margin-right: auto;
+    }
     .card_head {
       transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
       transform: scale(1);
       position: relative;
-      margin-top: 30px;
+      margin-top: 38px;
       perspective: 160px;
       perspective-origin: 50% -100%;
+      @include md {
+        margin-top: 46px;
+      }
       img {
         width: 100%;
         border-radius: 10px;

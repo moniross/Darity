@@ -20,6 +20,11 @@
     @content;
   }
 }
+@mixin max-md {
+  @media screen and (max-width: 868px) {
+    @content;
+  }
+}
 
 @mixin lg {
   @media screen and (max-width: 992px) {

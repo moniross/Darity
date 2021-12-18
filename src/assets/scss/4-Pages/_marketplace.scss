@@ -1,9 +1,15 @@
-.wrap {
-  display: flex;
-  justify-content: space-between;
-}
 .marketplace {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+  @include max-lg {
+    max-width: max-content;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hero_marketplace {
+    overflow: hidden;
     background-image: url(../img/bg/cover.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,16 +18,25 @@
     }
     .hero_title {
       font-size: 50px;
+      width: 100%;
       max-width: 30rem;
+      @include max-lg {
+        max-width: max-content;
+      }
+
       @include sm {
-        font-size: 45px;
+        font-size: 40px;
       }
     }
   }
   .categories {
     .items {
       display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -20px;
       .item {
+        margin-right: 20px;
+        margin-bottom: 20px;
         background: $color_secondary;
         color: $color_white;
         border-radius: 50px;
@@ -35,6 +50,9 @@
         background-clip: content-box, border-box;
         border: none;
         padding: 1px;
+        &:last-of-type {
+          margin-right: 0;
+        }
         .wrapper {
           display: flex;
           align-items: center;

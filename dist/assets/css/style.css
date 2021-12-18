@@ -12281,13 +12281,32 @@ body {
   }
 }
 
+.main_container {
+  margin-left: 235px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: calc(100vh - 88px);
+  overflow: auto;
+}
+@media screen and (max-width: 1400px) {
+  .main_container {
+    margin-left: 115px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_container {
+    height: auto;
+    overflow: hidden;
+    margin-left: 0;
+  }
+}
+
 .main {
   background-image: url(../img/bg/pattren.png);
   background-size: coveer;
   background-repeat: no-repeat;
   background-position: center top;
-  margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 88px;
 }
 
 @media (min-width: 1400px) {
@@ -13671,6 +13690,13 @@ label:active:after {
 
 .card_item.one {
   margin-bottom: 30px;
+  max-width: 280px;
+}
+@media screen and (max-width: 576px) {
+  .card_item.one {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .card_item.one .card_head {
   -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -13678,11 +13704,16 @@ label:active:after {
   -webkit-transform: scale(1);
           transform: scale(1);
   position: relative;
-  margin-top: 30px;
+  margin-top: 38px;
   -webkit-perspective: 160px;
           perspective: 160px;
   -webkit-perspective-origin: 50% -100%;
           perspective-origin: 50% -100%;
+}
+@media screen and (max-width: 768px) {
+  .card_item.one .card_head {
+    margin-top: 46px;
+  }
 }
 .card_item.one .card_head img {
   width: 100%;
@@ -14098,6 +14129,11 @@ label:active:after {
 }
 
 .sidebar {
+  position: fixed;
+  width: 220px;
+  left: 15px;
+  height: calc(100vh - 108px);
+  margin-bottom: 20px;
   background-color: #10173e;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#10173e, #10173e), linear-gradient(180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
@@ -14110,6 +14146,16 @@ label:active:after {
 @media screen and (max-width: 1400px) {
   .sidebar {
     width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+    width: auto;
+    left: auto;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 .sidebar .sidabar_content {
@@ -14132,9 +14178,30 @@ label:active:after {
     padding: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  .sidebar .sidabar_content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+}
 .sidebar .sidabar_content .categories {
-  overflow: auto;
+  overflow-y: scroll;
   scrollbar-width: thin;
+}
+@media screen and (max-width: 768px) {
+  .sidebar .sidabar_content .categories {
+    overflow: hidden;
+    overflow-x: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .sidebar .sidabar_content .categories .marketplace_pages {
   margin-bottom: 30px;
@@ -14156,16 +14223,24 @@ label:active:after {
     display: none;
   }
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li,
-.sidebar .sidabar_content .categories .account_pages ul li {
+@media screen and (max-width: 768px) {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items,
+.sidebar .sidabar_content .categories .account_pages .list_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li,
+.sidebar .sidabar_content .categories .account_pages .list_items li {
   margin-bottom: 5px;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li:last-of-type,
-.sidebar .sidabar_content .categories .account_pages ul li:last-of-type {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li:last-of-type,
+.sidebar .sidabar_content .categories .account_pages .list_items li:last-of-type {
   margin-bottom: 0;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a,
-.sidebar .sidabar_content .categories .account_pages ul li a {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a,
+.sidebar .sidabar_content .categories .account_pages .list_items li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14178,56 +14253,82 @@ label:active:after {
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a p,
-.sidebar .sidabar_content .categories .account_pages ul li a p {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a p,
+.sidebar .sidabar_content .categories .account_pages .list_items li a p {
   -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a:hover,
-.sidebar .sidabar_content .categories .account_pages ul li a:hover {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a:hover,
+.sidebar .sidabar_content .categories .account_pages .list_items li a:hover {
   background-color: #7b38ff;
   color: white;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a:hover p,
-.sidebar .sidabar_content .categories .account_pages ul li a:hover p {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a:hover p,
+.sidebar .sidabar_content .categories .account_pages .list_items li a:hover p {
   color: white;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a i,
-.sidebar .sidabar_content .categories .account_pages ul li a i {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a i,
+.sidebar .sidabar_content .categories .account_pages .list_items li a i {
   font-size: 24px;
+  margin-right: 10px;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a.active,
-.sidebar .sidabar_content .categories .account_pages ul li a.active {
+@media screen and (max-width: 1400px) {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li a i,
+.sidebar .sidabar_content .categories .account_pages .list_items li a i {
+    margin-right: 0;
+  }
+}
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a.active,
+.sidebar .sidabar_content .categories .account_pages .list_items li a.active {
   color: #ffffff;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a.active p,
-.sidebar .sidabar_content .categories .account_pages ul li a.active p {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a.active p,
+.sidebar .sidabar_content .categories .account_pages .list_items li a.active p {
   color: #ffffff;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a.active:hover,
-.sidebar .sidabar_content .categories .account_pages ul li a.active:hover {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a.active:hover,
+.sidebar .sidabar_content .categories .account_pages .list_items li a.active:hover {
   color: #ffffff;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a.active:hover p,
-.sidebar .sidabar_content .categories .account_pages ul li a.active:hover p {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a.active:hover p,
+.sidebar .sidabar_content .categories .account_pages .list_items li a.active:hover p {
   color: #ffffff;
 }
-.sidebar .sidabar_content .categories .marketplace_pages ul li a .links_name,
-.sidebar .sidabar_content .categories .account_pages ul li a .links_name {
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a .links_name,
+.sidebar .sidabar_content .categories .account_pages .list_items li a .links_name {
   font-size: 16.5px;
 }
 @media screen and (max-width: 1400px) {
-  .sidebar .sidabar_content .categories .marketplace_pages ul li a .links_name,
-.sidebar .sidabar_content .categories .account_pages ul li a .links_name {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li a .links_name,
+.sidebar .sidabar_content .categories .account_pages .list_items li a .links_name {
     display: none;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
   }
 }
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a .tooltip,
+.sidebar .sidabar_content .categories .account_pages .list_items li a .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
 @media screen and (max-width: 1400px) {
-  .sidebar .sidabar_content .categories .marketplace_pages ul li a,
-.sidebar .sidabar_content .categories .account_pages ul li a {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li a,
+.sidebar .sidabar_content .categories .account_pages .list_items li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -14237,7 +14338,14 @@ label:active:after {
   }
 }
 .sidebar .sidabar_content .logout {
-  margin-top: 208px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar .sidabar_content .logout {
+    display: block;
+    margin-top: 0;
+    margin-left: 40px;
+  }
 }
 .sidebar .sidabar_content .logout a {
   display: -webkit-box;
@@ -14966,6 +15074,25 @@ table tbody td:last-child {
   position: relative;
 }
 
+.aside_marketplace {
+  overflow: hidden;
+  min-width: 324px;
+  margin-left: 15px;
+}
+@media screen and (max-width: 1260px) {
+  .aside_marketplace {
+    margin-top: 20px;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (max-width: 868px) {
+  .aside_marketplace {
+    display: block;
+  }
+}
 .aside_marketplace .recently_added {
   background-image: url(../img/bg/gardient_bg.png);
   background-size: cover;
@@ -14974,6 +15101,44 @@ table tbody td:last-child {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.29);
   border-radius: 10px;
+}
+@media screen and (max-width: 1260px) {
+  .aside_marketplace .recently_added {
+    width: 100%;
+  }
+}
+.aside_marketplace .recently_added .card_item {
+  margin-bottom: 20px;
+}
+.aside_marketplace .recently_added .card_item:nth-child(5) {
+  margin-bottom: 0;
+}
+.aside_marketplace .recently_added .hr {
+  margin-bottom: 20px;
+}
+.aside_marketplace .top_creators {
+  overflow: hidden;
+  margin-top: 30px;
+}
+@media screen and (max-width: 1260px) {
+  .aside_marketplace .top_creators {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 868px) {
+  .aside_marketplace .top_creators {
+    width: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.aside_marketplace .top_creators .creators_wrap .card_item {
+  margin-bottom: 20px;
+}
+.aside_marketplace .top_creators .creators_wrap .card_item:last-of-type {
+  margin-bottom: 0;
 }
 
 .items_table .item_img {
@@ -14989,16 +15154,28 @@ table tbody td:last-child {
 /* ===================
 - 5/ Pages
 =======================*/
-.wrap {
+.marketplace {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 20px;
 }
-
+@media screen and (max-width: 1260px) {
+  .marketplace {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .marketplace .hero_marketplace {
+  overflow: hidden;
   background-image: url(../img/bg/cover.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -15021,19 +15198,32 @@ table tbody td:last-child {
 }
 .marketplace .hero_marketplace .hero_title {
   font-size: 50px;
+  width: 100%;
   max-width: 30rem;
+}
+@media screen and (max-width: 1260px) {
+  .marketplace .hero_marketplace .hero_title {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }
 @media screen and (max-width: 576px) {
   .marketplace .hero_marketplace .hero_title {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 .marketplace .categories .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -20px;
 }
 .marketplace .categories .items .item {
+  margin-right: 20px;
+  margin-bottom: 20px;
   background: #10173e;
   color: #ffffff;
   border-radius: 50px;
@@ -15043,6 +15233,9 @@ table tbody td:last-child {
   background-clip: content-box, border-box;
   border: none;
   padding: 1px;
+}
+.marketplace .categories .items .item:last-of-type {
+  margin-right: 0;
 }
 .marketplace .categories .items .item .wrapper {
   display: -webkit-box;

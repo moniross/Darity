@@ -13912,13 +13912,6 @@ label:active:after {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 992px) {
-  .card_item.four {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-}
 .card_item.four .icon {
   font-weight: bold;
   font-size: 19px;

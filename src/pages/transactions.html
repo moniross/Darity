@@ -1,9 +1,10 @@
+
 {{> header}}
 <div class="main">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2">{{> sidebar}}</div>
-      <div class="col-lg-10">
+  <div >
+    {{> sidebar}}
+    <div class="main_container ">
+      <div>
         <h2 class="section_title">My Transactions</h2>
         <div class="row">
           <div class="col-lg-4">{{> transactions_card}}</div>
@@ -11,6 +12,7 @@
         </div>
         {{> transactions_items}} {{> last_transactions2}}
       </div>
+    </div>
     </div>
   </div>
 </div>

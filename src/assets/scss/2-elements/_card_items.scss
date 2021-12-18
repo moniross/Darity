@@ -171,9 +171,7 @@
     border: 1px solid $color_border;
     border-radius: 10px;
     margin-bottom: 20px;
-    @include lg {
-      max-width: max-content;
-    }
+
     .icon {
       font-weight: bold;
       font-size: 19px;

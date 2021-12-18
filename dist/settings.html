@@ -26,8 +26,7 @@
   </head>
 
   <body class="body">
-    <div class="overflow-hidden">
-<header class="header__1 js-header" id="header">
+    <div class="overflow-hidden"><header class="header__1 js-header" id="header">
   <div class="container-fluid">
     <div class="wrapper js-header-wrapper">
       <div class="header__logo">
@@ -293,7 +292,7 @@
   </div>
 </header>
 <div class="main">
-  <div >
+  <div>
     <!-- sidebar -->
     <div class="sidebar" id="sidebar">
       <div class="sidabar_content">
@@ -377,334 +376,137 @@
         </div>
       </div>
     </div>
-    <div class="main_container ">
-      <div><div class="my_items">
-  <h2 class="section_title">My Items</h2>
-  <div class="row mb-20_reset">
-    <div class="col-lg-3 col-6">
-      <div class="card_item five space-x-10">
-        <div class="icon">
-          <i class="ri-stack-line"></i>
+    <div class="main_container">
+      <div class="settings space-y-20">
+        <div class="space-y-5">
+          <h2>Profile</h2>
+          <p>Welcome Darity Settings Profile page</p>
         </div>
-        <div class="d-flex flex-column">
-          <span class="color_text txt_sm">Total Items</span>
-          <span class="items_number">3,456</span>
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="mb-20">User Profile</h5>
+            <div class="box style_one">
+              <div class="wrap space-y-20">
+                <div class="space-y-10">
+                  <span>Full Name</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Full Name"
+                  />
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="position-relative">
+                    <img
+                      id="profileImage"
+                      class="me-3 rounded-circle me-0 me-sm-3"
+                      src="../assets/img/avatars/profile.png"
+                      alt=""
+                      width="55"
+                      height="55"
+                    />
+                    <input
+                      id="imageUpload"
+                      type="file"
+                      name="profile_photo"
+                      placeholder="Photo"
+                      required=""
+                      capture=""
+                    />
+                  </div>
+                  <div class="media-body">
+                    <span class="txt _bold">Jannatul Maowa</span>
+                    <p>Max file size is 20mb</p>
+                  </div>
+                </div>
+                <div>
+                  <a href="#" class="btn btn_primary">Save</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h5 class="mb-20">Update Profile</h5>
+            <div class="box style_one">
+              <div class="wrap space-y-20">
+                <div class="space-y-10">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="space-y-10">
+                  <span>Password</span>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter your password"
+                  />
+                </div>
+
+                <div>
+                  <a href="#" class="btn btn_primary">Save</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <h5 class="mb-20">Personal Information</h5>
+            <div class="box style_one">
+              <div class="wrap space-y-20">
+                <div class="row mb-20_reset">
+                  <div class="col-lg-6 mb-20">
+                    <div class="space-y-10">
+                      <span>Full Name</span>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-20">
+                    <div class="space-y-10">
+                      <span>Email</span>
+                      <input type="text" class="form-control" />
+                    </div>
+                </div>
+                    <div class="col-lg-6  mb-20">
+                      <div class="space-y-10">
+                        <span>Address</span>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6  mb-20">
+                      <div class="space-y-10">
+                        <span>City</span>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6  mb-20">
+                      <div class="space-y-10">
+                        <span>Post Code</span>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6  mb-20">
+                      <div class="space-y-10">
+                        <span>Country</span>
+                        <select class="form-select custom-select" aria-label="Default select example">
+                            <option>United States</option>
+                            <option>United Kingdom</option>
+                            <option>Germany</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <a href="#" class="btn btn_primary">Save</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-3 col-6">
-      <div class="card_item five space-x-10">
-        <div class="icon">
-          <i class="ri-check-double-line"></i>
-        </div>
-        <div class="d-flex flex-column">
-          <span class="color_text txt_sm">Active Items</span>
-          <span class="items_number">3,000</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6">
-      <div class="card_item five space-x-10">
-        <div class="icon">
-          <i class="ri-arrow-go-forward-line"></i>
-        </div>
-        <div class="d-flex flex-column">
-          <span class="color_text txt_sm">In Review</span>
-          <span class="items_number">35</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-6">
-      <div class="card_item five space-x-10">
-        <div class="icon">
-          <i class="ri-close-line"></i>
-        </div>
-        <div class="d-flex flex-column">
-          <span class="color_text txt_sm">Rejected</span>
-          <span class="items_number">132</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- <div class="items_table mt-30">
-  <table class="table custom_table custom_table2">
-    <thead>
-      <tr>
-        <th scope="col"><span>Name</span></th>
-        <th scope="col"><span>Date</span></th>
-        <th scope="col"><span>Blockchain</span></th>
-        <th scope="col"><span>Token ID</span></th>
-        <th scope="col"><span>Price</span></th>
-        <th scope="col"><span>Category</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <div class="d-flex space-x-10 align-items-center">
-            <img
-              class="item_img"
-              src="../../assets/img/items/item1.png"
-              alt=""
-            />
-            <div>
-              <h6>Colorful Abstract</h6>
-              <div class="avatars space-x-10">
-                <div class="media">
-                  <div class="badge">
-                    <img src="../../assets/img/icons/badge.svg" alt="badge" />
-                  </div>
-                  <a href="#">
-                    <img
-                      src="../../assets/img/avatars/avatar1.png"
-                      alt="Avatar"
-                      class="avatar avatar-md border-0"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="Profile.html">
-                    <p class="avatars_name color_white">@makinzi_jamy</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-
-        <td><span class="color_white">Sep 5 , 2022</span></td>
-        <td><span class="color_white">Ethereum</span></td>
-        <td><span class="color_white">108159412</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">2 ($4,996.88)</span>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center space-x-5">
-            <i class="ri-ghost-smile-line color_white"></i>
-            <span class="color_white">Memes </span>
-          </div>
-        </td>
-        <td>
-          <i class="ri-download-line color_green txt_lg"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="d-flex space-x-10 align-items-center">
-            <img
-              class="item_img"
-              src="../../assets/img/items/item1.png"
-              alt=""
-            />
-            <div>
-              <h6>Colorful Abstract</h6>
-              <div class="avatars space-x-10">
-                <div class="media">
-                  <div class="badge">
-                    <img src="../../assets/img/icons/badge.svg" alt="badge" />
-                  </div>
-                  <a href="#">
-                    <img
-                      src="../../assets/img/avatars/avatar1.png"
-                      alt="Avatar"
-                      class="avatar avatar-md border-0"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="Profile.html">
-                    <p class="avatars_name color_white">@makinzi_jamy</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-
-        <td><span class="color_white">Sep 5 , 2022</span></td>
-        <td><span class="color_white">Ethereum</span></td>
-        <td><span class="color_white">108159412</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">2 ($4,996.88)</span>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center space-x-5">
-            <i class="ri-ghost-smile-line color_white"></i>
-            <span class="color_white">Memes </span>
-          </div>
-        </td>
-        <td>
-          <i class="ri-download-line color_green txt_lg"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="d-flex space-x-10 align-items-center">
-            <img
-              class="item_img"
-              src="../../assets/img/items/item1.png"
-              alt=""
-            />
-            <div>
-              <h6>Colorful Abstract</h6>
-              <div class="avatars space-x-10">
-                <div class="media">
-                  <div class="badge">
-                    <img src="../../assets/img/icons/badge.svg" alt="badge" />
-                  </div>
-                  <a href="#">
-                    <img
-                      src="../../assets/img/avatars/avatar1.png"
-                      alt="Avatar"
-                      class="avatar avatar-md border-0"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="Profile.html">
-                    <p class="avatars_name color_white">@makinzi_jamy</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-
-        <td><span class="color_white">Sep 5 , 2022</span></td>
-        <td><span class="color_white">Ethereum</span></td>
-        <td><span class="color_white">108159412</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">2 ($4,996.88)</span>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center space-x-5">
-            <i class="ri-ghost-smile-line color_white"></i>
-            <span class="color_white">Memes </span>
-          </div>
-        </td>
-        <td>
-          <i class="ri-download-line color_green txt_lg"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="d-flex space-x-10 align-items-center">
-            <img
-              class="item_img"
-              src="../../assets/img/items/item1.png"
-              alt=""
-            />
-            <div>
-              <h6>Colorful Abstract</h6>
-              <div class="avatars space-x-10">
-                <div class="media">
-                  <div class="badge">
-                    <img src="../../assets/img/icons/badge.svg" alt="badge" />
-                  </div>
-                  <a href="#">
-                    <img
-                      src="../../assets/img/avatars/avatar1.png"
-                      alt="Avatar"
-                      class="avatar avatar-md border-0"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="Profile.html">
-                    <p class="avatars_name color_white">@makinzi_jamy</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-
-        <td><span class="color_white">Sep 5 , 2022</span></td>
-        <td><span class="color_white">Ethereum</span></td>
-        <td><span class="color_white">108159412</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">2 ($4,996.88)</span>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center space-x-5">
-            <i class="ri-ghost-smile-line color_white"></i>
-            <span class="color_white">Memes </span>
-          </div>
-        </td>
-        <td>
-          <i class="ri-download-line color_green txt_lg"></i>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="d-flex space-x-10 align-items-center">
-            <img
-              class="item_img"
-              src="../../assets/img/items/item1.png"
-              alt=""
-            />
-            <div>
-              <h6>Colorful Abstract</h6>
-              <div class="avatars space-x-10">
-                <div class="media">
-                  <div class="badge">
-                    <img src="../../assets/img/icons/badge.svg" alt="badge" />
-                  </div>
-                  <a href="#">
-                    <img
-                      src="../../assets/img/avatars/avatar1.png"
-                      alt="Avatar"
-                      class="avatar avatar-md border-0"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a href="Profile.html">
-                    <p class="avatars_name color_white">@makinzi_jamy</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </td>
-
-        <td><span class="color_white">Sep 5 , 2022</span></td>
-        <td><span class="color_white">Ethereum</span></td>
-        <td><span class="color_white">108159412</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">2 ($4,996.88)</span>
-          </div>
-        </td>
-        <td>
-          <div class="d-flex align-items-center space-x-5">
-            <i class="ri-ghost-smile-line color_white"></i>
-            <span class="color_white">Memes </span>
-          </div>
-        </td>
-        <td>
-          <i class="ri-download-line color_green txt_lg"></i>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-    </div>
     </div>
   </div>
 </div>

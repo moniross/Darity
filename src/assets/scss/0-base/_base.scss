@@ -39,14 +39,27 @@ body {
     font-size: 15.5px;
   }
 }
-
+.main_container {
+  margin-left: 235px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: calc(100vh - 88px);
+  overflow: auto;
+  @include xl {
+    margin-left: 115px;
+  }
+  @include md {
+    height: auto;
+    overflow: hidden;
+    margin-left: 0;
+  }
+}
 .main {
   background-image: url(../img/bg/pattren.png);
   background-size: coveer;
   background-repeat: no-repeat;
   background-position: center top;
-  margin-bottom: 20px;
-  margin-top: 100px;
+  margin-top: 88px;
 }
 
 @media (min-width: 1400px) {

@@ -8,7 +8,7 @@
 }
 
 .section__head {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 // Trending auctions
@@ -18,7 +18,17 @@
 
 // Aside marketplace
 .aside_marketplace {
-  min-width: 330px;
+  overflow: hidden;
+  min-width: 324px;
+  margin-left: 15px;
+  @include max-lg {
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+  }
+  @include max-md {
+    display: block;
+  }
   .recently_added {
     background-image: url(../img/bg/gardient_bg.png);
     background-size: cover;
@@ -27,6 +37,40 @@
     padding: 20px;
     border: 1px solid $color_border;
     border-radius: 10px;
+    @include max-lg {
+      width: 100%;
+    }
+    .card_item {
+      margin-bottom: 20px;
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+    }
+    .hr {
+      margin-bottom: 20px;
+    }
+  }
+  .top_creators {
+    overflow: hidden;
+    margin-top: 30px;
+    @include max-lg {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 20px;
+    }
+    @include max-md {
+      width: auto;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .creators_wrap {
+      .card_item {
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
@@ -38,5 +82,19 @@
     border-radius: 10px;
 
     object-fit: cover;
+  }
+}
+
+.last_transactions,
+.items_table {
+  overflow-x: auto;
+}
+.section_auctions {
+  display: flex;
+  @include max-lg {
+    max-width: max-content;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

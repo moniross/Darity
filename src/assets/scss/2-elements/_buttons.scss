@@ -72,7 +72,7 @@ p a.btn {
 
 .btn_lg {
   padding: 7px 25px;
-  font-size: 19px;
+
   line-height: 1.7;
 }
 
@@ -80,14 +80,14 @@ p a.btn {
 - - - - - - - - - 2/ Button variations
 =======================================================*/
 .btn_primary {
-  color: $color_black;
+  color: white;
   border: none;
   transition: all 0.4s ease-in-out;
   background: $color_brand;
   position: relative;
 
   &:hover {
-    color: $color_black;
+    color: white;
     border: none;
   }
 }
@@ -134,5 +134,13 @@ p a.btn {
     background: $color_light;
     border: 1px solid $color_border;
     color: $color_white;
+  }
+}
+.btn_verify {
+  color: #36b37e;
+  background-color: rgba(54, 179, 126, 0.22);
+  &:hover {
+    color: #36b37e;
+    background-color: rgba(54, 179, 126, 0.22);
   }
 }

@@ -30,28 +30,21 @@ select,
 textarea,
 .custom-select {
   background: 0 0;
-  color: $color_text;
-  background-color: $color_secondary;
+  color: $color_white;
+  background-color: $color_light2;
   border: none;
   width: 100%;
   line-height: 1.5;
   font-weight: 400;
-  font-size: inherit;
+  font-size: 16px;
   border-radius: 12px;
   position: relative;
   -webkit-appearance: none;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
   outline: 0;
-  background-image: linear-gradient($color_secondary, $color_secondary),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.19) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  background-origin: border-box;
-  background-clip: content-box, border-box;
   border: none;
-  padding: 1px;
+  padding: 15px;
+  box-shadow: none;
   @include sm {
     padding: 12px;
     font-size: 14px;
@@ -60,13 +53,12 @@ textarea,
     font-size: 13px;
   }
   &:focus {
-    background-color: $color_white !important;
-    border: 1px solid $color_stroke !important;
+    color: $color_white;
+    background-color: $color_light2;
     box-shadow: none !important;
   }
   &:hover {
-    background-color: $color_white;
-    border: solid 1px $color_stroke;
+    background-color: $color_light2;
   }
 }
 .form-select {
@@ -77,6 +69,9 @@ textarea,
   @include xs {
     font-size: 13px;
   }
+}
+.input_wrap {
+  padding: 20px;
 }
 .form-group {
   margin-bottom: 20px !important;

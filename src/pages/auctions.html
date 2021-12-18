@@ -1,11 +1,15 @@
+
 {{> header}}
 <div class="main">
-  <div class="container-fluid">
-    <div class="wrap space-x-20">
-      <div >{{> sidebar}}</div>
-      <div >{{> nft_auctions}} {{> recent_bid}}</div>
-      <div >{{> right_side}}</div>
+  <div >
+    {{> sidebar}}
+    <div class="main_container ">
+      <div class="section_auctions">
+        <div >{{> nft_auctions}} {{> recent_bid}}</div>
+        <div >{{> right_side}}</div>
       </div>
+ 
+    </div>
     </div>
   </div>
 </div>

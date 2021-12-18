@@ -1,6 +1,8 @@
 .custom_table {
+  min-width: max-content;
   border-collapse: separate;
   border-spacing: 0 10px;
+
   thead {
     border: none !important;
     tr {

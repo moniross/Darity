@@ -1,16 +1,19 @@
+
 {{> header}}
 <div class="main">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2">{{> sidebar}}</div>
-      <div class="col-lg-10">
-        <h2 class="section_title">Activity</h2>
-        <div class="row">
-          <div class="col-lg-6">{{> card_activity1}}</div>
-          <div class="col-lg-6">{{> card_activity2}}</div>
-        </div>
-        {{> trading_activity}}
+  <div >
+    {{> sidebar}}
+    <div class="main_container ">
+     <div>
+      <h2 class="section_title">Activity</h2>
+      <div class="row mb-20_reset">
+        <div class="col-lg-6 col-md-12">{{> card_activity1}}</div>
+        <div class="col-lg-6 col-md-12">{{> card_activity2}}</div>
       </div>
+      {{> trading_activity}}
+     </div>
+    </div>
     </div>
   </div>
 </div>
+

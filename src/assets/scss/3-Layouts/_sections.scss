@@ -84,3 +84,17 @@
     object-fit: cover;
   }
 }
+
+.last_transactions,
+.items_table {
+  overflow-x: auto;
+}
+.section_auctions {
+  display: flex;
+  @include max-lg {
+    max-width: max-content;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

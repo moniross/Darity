@@ -291,36 +291,224 @@
     </div>
   </div>
 </header>
-<div class="login">
-  <div class="section__head space-y-20">
-    <h3>Welcome to Darity</h3>
-    <div class="d-flex space-x-10">
-      <p class="color_text">Don't have an account yet?</p>
-      <a href="#">Register</a>
+<div class="main">
+  <div>
+    <!-- sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidabar_content">
+        <div class="categories">
+          <div class="marketplace_pages">
+            <h6 class="pages_title">MARKETPLACE</h6>
+            <ul class="list_items">
+              <li>
+                <a href="/" class="active">
+                  <i class="ri-home-smile-2-line"></i>
+                  <p class="links_name">Marketplace</p>
+                </a>
+              </li>
+              <li>
+                <a href="overview.html">
+                  <i class="ri-compass-3-line"></i>
+                  <p class="links_name">Overview</p>
+                </a>
+              </li>
+              <li>
+                <a href="items.html">
+                  <i class="ri-image-2-line"></i>
+                  <p class="links_name">My items</p>
+                </a>
+              </li>
+              <li>
+                <a href="activity.html">
+                  <i class="ri-pulse-line"></i>
+                  <p class="links_name">Activity</p>
+                </a>
+              </li>
+              <li>
+                <a href="auctions.html">
+                  <i class="ri-line-chart-line"></i>
+                  <p class="links_name">Auctions</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="account_pages">
+            <h6 class="pages_title">ACCOUNT</h6>
+            <ul class="list_items">
+              <li>
+                <a href="transactions.html">
+                  <i class="ri-send-plane-line"></i>
+                  <p class="links_name">Transactions</p>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html">
+                  <i class="ri-briefcase-2-line"></i>
+                  <p class="links_name">My Portfolio</p>
+                </a>
+              </li>
+              <li>
+                <a href="my-bid.html">
+                  <i class="ri-dvd-line"></i>
+                  <p class="links_name">My Active Bid</p>
+                </a>
+              </li>
+              <li>
+                <a href="wallet.html">
+                  <i class="ri-wallet-3-line"></i>
+                  <p class="links_name">Wallets</p>
+                </a>
+              </li>
+              <li>
+                <a href="settings.html">
+                  <i class="ri-settings-3-line"></i>
+                  <p class="links_name">Settings</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="logout">
+          <a href="login.html">
+            <i class="ri-logout-box-r-line"></i>
+            <p>Logout</p>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="box style_two">
-    <div class="login_wrap w-full space-y-20">
-      <div class="space-y-10">
-        <span class="nameInput">Email </span>
-        <div class="confirm">
-          <input type="text" class="form-control" placeholder="Enter email" />
+    <div class="main_container">
+      <div class="wallet space-y-20">
+        <div class="space-y-5">
+          <h2>Wallet</h2>
+          <p>Welcome Darity wallet page</p>
+        </div>
+        <div class="row space-y-20">
+          <div class="col-lg-12">
+            <div class="my_items">
+                <div class="space-y-5 mb-20">
+                    <h5 class="color_brand">Balance Details</h5>
+                    <p>Total Balance: <span class="color_white">$221,478</span></p>
+                    
+                </div>
+                <div class="row mb-20_reset">
+                  <div class="col-md-4 col-6">
+                    <div class="card_item five justify-content-between">
+                      <div class="icon">
+                        <i class="ri-money-dollar-circle-line"></i>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="color_text txt_sm">Last Month</span>
+                        <span class="items_number">$42,678</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="card_item five justify-content-between">
+                      <div class="icon">
+                        <i class="ri-file-copy-2-line"></i>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="color_text txt_sm">Expenses</span>
+                        <span class="items_number">$1,798</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="card_item five justify-content-between">
+                      <div class="icon">
+                        <i class="ri-exchange-dollar-line"></i>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span class="color_text txt_sm">Taxes</span>
+                        <span class="items_number">$255.25</span>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="my_items">
+                <div class=" mb-20">
+                    <h5 class="color_brand">Latest Transaction</h5>
+     
+                </div>
+                <div class="row mb-20_reset">
+                    <div class="col-lg-6">
+                        <div class="card_item five justify-content-between">
+                            <div class="d-flex space-x-20">
+                                <div class="icon">
+                                    <i class="ri-file-transfer-line"></i>
+                                  </div>
+                              <div class="d-flex flex-column">
+                                  <span class="txt_sm _bold color_white">Terry Camacho</span>
+                                <span class="color_text txt_sm">60 Items</span>
+                              </div>
+                            </div>
+    
+                          <div>
+                            <span class="txt_sm _bold color_brand">0.2658 ETH</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card_item five justify-content-between">
+                            <div class="d-flex space-x-20">
+                                <div class="icon">
+                                    <i class="ri-file-transfer-line"></i>
+                                  </div>
+                              <div class="d-flex flex-column">
+                                  <span class="txt_sm _bold color_white">Terry Camacho</span>
+                                <span class="color_text txt_sm">60 Items</span>
+                              </div>
+                            </div>
+    
+                          <div>
+                            <span class="txt_sm _bold color_brand">0.2658 ETH</span>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="col-lg-6">
+                    <div class="card_item five justify-content-between">
+                        <div class="d-flex space-x-20">
+                            <div class="icon">
+                                <i class="ri-file-transfer-line"></i>
+                              </div>
+                          <div class="d-flex flex-column">
+                              <span class="txt_sm _bold color_white">Terry Camacho</span>
+                            <span class="color_text txt_sm">60 Items</span>
+                          </div>
+                        </div>
+
+                      <div>
+                        <span class="txt_sm _bold color_brand">0.2658 ETH</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="card_item five justify-content-between">
+                        <div class="d-flex space-x-20">
+                            <div class="icon">
+                                <i class="ri-file-transfer-line"></i>
+                              </div>
+                          <div class="d-flex flex-column">
+                              <span class="txt_sm _bold color_white">Terry Camacho</span>
+                            <span class="color_text txt_sm">60 Items</span>
+                          </div>
+                        </div>
+
+                      <div>
+                        <span class="txt_sm _bold color_brand">0.2658 ETH</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
         </div>
       </div>
-      <div class="space-y-10">
-        <span class="nameInput">Password</span>
-        <div class="confirm">
-          <input
-            type="password"
-            class="form-control"
-            placeholder="Enter your password"
-          />
-        </div>
-      </div>
-      <a class="btn btn_verify btn_sm"
-        ><i class="ri-checkbox-circle-line mr-3"></i>Click to verify
-      </a>
-      <a href="#" class="btn btn_primary w-full btn_lg"> Create an account</a>
     </div>
   </div>
 </div>

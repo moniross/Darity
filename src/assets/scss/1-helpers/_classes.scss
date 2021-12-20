@@ -59,7 +59,10 @@
 .bg_green {
   background-color: $color_green;
 }
-
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
 .bg_red {
   background-color: $color_red;
 }

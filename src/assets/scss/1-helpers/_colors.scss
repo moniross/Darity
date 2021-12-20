@@ -1,5 +1,5 @@
 // === Template colors
-$color_brand: #7b38ff;
+$color_brand: #097CFF;
 $color_secondary: #10173e;
 $color_dark: #060b27;
 $color_black: #080134;
@@ -12,25 +12,12 @@ $color_icon_green: #064462;
 $color_icon_red: #561857;
 $color_red: #ff6871;
 $color_pink: #ff72d2;
-$color_yellow: #ffd166;
+$color_yellow: #fcd339;
 $color_white: #ffffff;
 $color_border: rgba(255, 255, 255, 0.29);
-$color_border2: linear-gradient(
-  to right,
-  rgba(255, 255, 255, 0.5) 0%,
-  #00000000 50%,
-  rgba(255, 255, 255, 0.5) 100%
-);
-$color_stroke: linear-gradient(
-  180deg,
-  rgba(255, 255, 255, 0.19) 0%,
-  rgba(255, 255, 255, 0) 100%
-);
-$color_grad: linear-gradient(
-  rgba(255, 255, 255, 1) 0%,
-  rgba(255, 255, 255, 0) 100%
-);
-
+$color_border2: linear-gradient( to right, rgba(255, 255, 255, 0.5) 0%, #00000000 50%, rgba(255, 255, 255, 0.5) 100%);
+$color_stroke: linear-gradient( 180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+$color_grad: linear-gradient( rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 // === end
 $maxMobile: "(max-width:767px)";
 $maxSmall: "(max-width:991px)";

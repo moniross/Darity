@@ -167,6 +167,11 @@ img {
   background-color: #01c5ba;
 }
 
+#chart {
+  max-width: 650px;
+  margin: 35px auto;
+}
+
 .bg_red {
   background-color: #ff6871;
 }

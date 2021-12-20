@@ -1,251 +1,245 @@
-
 // header
 (function () {
-	const header = $('.js-header'),
-		items = header.find('.js-header-item'),
-		burger = header.find('.js-header-burger'),
-		mobile = header.find('.js-header-mobile');
+  const header = $(".js-header"),
+    items = header.find(".js-header-item"),
+    burger = header.find(".js-header-burger"),
+    mobile = header.find(".js-header-mobile");
 
-	items.each(function () {
-		const item = $(this),
-			head = item.find('.js-header-head'),
-			body = item.find('.js-header-body');
+  items.each(function () {
+    const item = $(this),
+      head = item.find(".js-header-head"),
+      body = item.find(".js-header-body");
 
-		head.on('click', function (e) {
-			e.stopPropagation();
+    head.on("click", function (e) {
+      e.stopPropagation();
 
-			if (!item.hasClass('active')) {
-				items.removeClass('active');
-				item.addClass('active');
-			} else {
-				items.removeClass('active');
-			}
-		});
+      if (!item.hasClass("active")) {
+        items.removeClass("active");
+        item.addClass("active");
+      } else {
+        items.removeClass("active");
+      }
+    });
 
-		body.on('click', function (e) {
-			e.stopPropagation();
-		});
+    body.on("click", function (e) {
+      e.stopPropagation();
+    });
 
-		$('html, body').on('click', function () {
-			items.removeClass('active');
-		});
+    $("html, body").on("click", function () {
+      items.removeClass("active");
+    });
+  });
 
-	});
+  burger.on("click", function (e) {
+    e.stopPropagation();
 
-	burger.on('click', function (e) {
-		e.stopPropagation();
-
-		burger.toggleClass('active');
-		mobile.toggleClass('visible');
-	});
-
-}());
+    burger.toggleClass("active");
+    mobile.toggleClass("visible");
+  });
+})();
 
 // notifications popup
 (function () {
-	const header = $('.js-header'),
-		popup = header.find('.notifications_popup'),
-		icon = header.find('.js-notifications-icon');
+  const header = $(".js-header"),
+    popup = header.find(".notifications_popup"),
+    icon = header.find(".js-notifications-icon");
 
-	icon.on('click', function (e) {
-		e.stopPropagation();
-		popup.toggleClass('visible');
-	});
-	$(document).on('click', 'body', function (e) {
-		if (!$(e.target).is('.visible'))
-			popup.removeClass('visible');
-	});
-
-}());
+  icon.on("click", function (e) {
+    e.stopPropagation();
+    popup.toggleClass("visible");
+  });
+  $(document).on("click", "body", function (e) {
+    if (!$(e.target).is(".visible")) popup.removeClass("visible");
+  });
+})();
 //  change log
 (function () {
-	const changelog = $('.changelog'),
-		log = changelog.find('.overflow_log'),
-		more = changelog.find('.more_log'),
-		text = changelog.find('.change_text');
-	text.innerHTML = "New Heading";
-	more.on('click', function (e) {
-		e.stopPropagation();
-		log.toggleClass('visible');
-		text.innerHTML = "New Heading";
-	});
-}());
+  const changelog = $(".changelog"),
+    log = changelog.find(".overflow_log"),
+    more = changelog.find(".more_log"),
+    text = changelog.find(".change_text");
+  text.innerHTML = "New Heading";
+  more.on("click", function (e) {
+    e.stopPropagation();
+    log.toggleClass("visible");
+    text.innerHTML = "New Heading";
+  });
+})();
 // avatar popup
 (function () {
-	const header = $('.js-header'),
-		popup = header.find('.avatar_popup'),
-		icon = header.find('.header__avatar');
+  const header = $(".js-header"),
+    popup = header.find(".avatar_popup"),
+    icon = header.find(".header__avatar");
 
-	icon.on('click', function (e) {
-		e.stopPropagation();
-		popup.toggleClass('visible');
-	});
-	$(document).on('click', 'body', function (e) {
-		if (!$(e.target).is('.visible'))
-			popup.removeClass('visible');
-	})
-
-}());
-
-
-
+  icon.on("click", function (e) {
+    e.stopPropagation();
+    popup.toggleClass("visible");
+  });
+  $(document).on("click", "body", function (e) {
+    if (!$(e.target).is(".visible")) popup.removeClass("visible");
+  });
+})();
 
 // menu popup
 (function () {
+  const header = $(".js-header"),
+    popup = header.find(".menu__popup"),
+    icon = header.find(".has_popup");
 
-	const header = $('.js-header'),
-		popup = header.find('.menu__popup'),
-		icon = header.find('.has_popup');
-
-	icon.on('click', function (e) {
-		e.stopPropagation();
-		popup.toggleClass('visible');
-	});
-	$(document).on('click', 'body', function (e) {
-		if (!$(e.target).is('.visible'))
-			popup.removeClass('visible');
-	})
-
-}());
+  icon.on("click", function (e) {
+    e.stopPropagation();
+    popup.toggleClass("visible");
+  });
+  $(document).on("click", "body", function (e) {
+    if (!$(e.target).is(".visible")) popup.removeClass("visible");
+  });
+})();
 (function () {
-	const header = $('.js-header'),
-		popup = header.find('.menu__popup2'),
-		icon = header.find('.has_popup2');
-	icon.on('click', function (e) {
-		e.stopPropagation();
-		popup.toggleClass('visible');
-	});
-	$(document).on('click', 'body', function (e) {
-		if (!$(e.target).is('.visible'))
-			popup.removeClass('visible');
-	})
-
-}());
+  const header = $(".js-header"),
+    popup = header.find(".menu__popup2"),
+    icon = header.find(".has_popup2");
+  icon.on("click", function (e) {
+    e.stopPropagation();
+    popup.toggleClass("visible");
+  });
+  $(document).on("click", "body", function (e) {
+    if (!$(e.target).is(".visible")) popup.removeClass("visible");
+  });
+})();
 
 $(document).ready(function () {
-
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-    });
-
+  $("#sidebarCollapse").on("click", function () {
+    $("#sidebar").toggleClass("active");
+  });
 });
 
-// chart
-
-var ctx = document.getElementById('myChart').getContext('2d');
-var data = {
-"labels": [
-"1 Aug",
-"2 Aug",
-"3 Aug",
-"4 Aug",
-"5 Aug",
-"6 Aug",
-"7 Aug",
-"8 Aug",
-"9 Aug",
-"10 Aug"
-],
-"datasets": [
-{
-  "label": "Category1",
-  "backgroundColor": "#000000",
-  "fill": false,
-  "data": [
-	"20",
-	"30",
-	"80",
-	"20",
-	"40",
-	"10",
-	"60"
-  ],
-  "borderColor": "#ff9300",
-  "pointRadius": "10",
-  "pointBackgroundColor": "#945200",
-  "pointBorderColor": "#ff9300",
-  "lineTension": 0.9,
-  "pointBorderWidth": 5,
-  "pointHoverBackgroundColor": "#ff9300",
-  "pointHoverBorderColor": "#945200"
-},
-{
-  "label": "Category2",
-  "backgroundColor": "",
-  "fill": false,
-  "data": [
-	"60",
-	"10",
-	"40",
-	"30",
-	"80",
-	"30",
-	"40"
-  ],
-  "borderColor": "#73fa79",
-  "pointRadius": "10",
-  "lineTension": 0,
-  "pointBackgroundColor": "#008f00",
-  "pointBorderColor": "#73fa79",
-  "pointBorderWidth": 5
-}
-]
-};
-var options = {
-"title": {
-"display": false
-},
-"legend": {
-"display": true
-},
-"scales": {
-"yAxes": [
-  {
-	"ticks": {
-	  "beginAtZero": true
-	},
-	"gridLines": {
-	  "display": true,
-	  "lineWidth": 1,
-	  "drawOnChartArea": true,
-	  "color": "#000000",
-	  "zeroLineColor": "#000000",
-	  "zeroLineWidth": 1,
-	  "drawTicks": true
-	}
-  }
-],
-"xAxes": {
-  "0": {
-	"gridLines": {
-	  "drawOnChartArea": false,
-	  "offsetGridLines": false,
-	  "zeroLineColor": "#000000",
-	  "display": true,
-	  "lineWidth": 2,
-	  "drawTicks": true,
-	  "zeroLineWidth": 2,
-	  "color": "#000000"
-	},
-	"ticks": {
-	  "display": true,
-	  "beginAtZero": true
-	}
-  }
-}
-},
-"elements": {
-"line": {
-  "borderColor": "#000000",
-  "lineTension": 0
-}
-}
-};
-
-var myChart = new Chart(ctx, {
-	type: 'line',
-	data: data,
-	options: options
+// sparkline
+$(".line-green").sparkline([800, 1000, 800, 1000, 900, 1000], {
+  type: "line",
+  width: "100%",
+  spotColor: false,
+  minSpotColor: false,
+  maxSpotColor: false,
+  lineWidth: 1.5,
+  height: "50",
+  lineColor: "#3DCA78",
+  fillColor: "#1E4A50",
+});
+$(".line-red").sparkline([8, 10, 8, 10, 9, 10], {
+  type: "line",
+  width: "100%",
+  spotColor: false,
+  minSpotColor: false,
+  maxSpotColor: false,
+  lineWidth: 1.5,
+  height: "50",
+  lineColor: "#FD6E93",
+  fillColor: "#442D52",
+});
+$(".line-blue").sparkline([80, 100, 80, 100, 90, 100], {
+  type: "line",
+  width: "100%",
+  spotColor: false,
+  minSpotColor: false,
+  maxSpotColor: false,
+  lineWidth: 1.5,
+  height: "50",
+  lineColor: "#72e6ff",
+  fillColor: "#15355A",
 });
 
-//  chart
+//Line Chart
+var transactionsChart = document.getElementById("line-chart");
+var lineCtx = transactionsChart.getContext("2d");
+var lineConfig = new Chart(lineCtx, {
+  type: "line",
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+      {
+        label: "Purchase",
+
+        borderColor: "#FF72D2",
+
+        borderWidth: 2,
+        data: [0.65, 0.59, 0.8, 0.81, 0.56, 0.55, 0.4],
+      },
+      {
+        label: "Offer",
+        borderColor: "#FFD166",
+        borderWidth: 2,
+        data: [0.28, 0.48, 0.4, 0.19, 0.86, 0.27, 0.9],
+      },
+      {
+        label: "Auction",
+        borderColor: "#01C5BA",
+        borderWidth: 2,
+        data: [0.38, 0.55, 0.6, 0.4, 0.76, 0.37, 0.7],
+      },
+    ],
+  },
+
+  options: {
+    legend: {
+      display: false,
+    },
+  },
+});
+
+//Goal Chart
+var StatisticChart = document.getElementById("Statistic-chart");
+var StatisticCtx = StatisticChart.getContext("2d");
+var StatisticConfig = new Chart(StatisticCtx, {
+  type: "doughnut",
+  data: {
+    labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai"],
+    datasets: [
+      {
+        data: [500, 50, 2424, 14040], // Specify the data values array
+
+        borderColor: ["#2196f38c", "#f443368c", "#3f51b570", "#00968896"], // Add custom color border
+        backgroundColor: ["#2196f38c", "#f443368c", "#3f51b570", "#00968896"], // Add custom color background (Points and Fill)
+        borderWidth: 1, // Specify bar border width
+      },
+    ],
+  },
+  options: {
+    responsive: true, // Instruct chart js to respond nicely.
+    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height
+  },
+});
+
+//Gradient Chart
+var gradientCtx = document.getElementById("gradient-chart").getContext("2d");
+gradientCtx.height = 150;
+
+var bar_chart = new Chart(gradientCtx, {
+  type: "line",
+  data: {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [
+      {
+        data: [65, 59, 80, 81, 56, 55, 40],
+        backgroundColor: "#163E61",
+        borderColor: "#2DCEE3",
+      },
+    ],
+  },
+  options: {
+    legend: {
+      display: false,
+    },
+    maintainAspectRatio: false,
+  },
+  scales: {
+    yAxes: [
+      {
+        stacked: true,
+        ticks: {
+          min: 0,
+          stepSize: 40,
+        },
+      },
+    ],
+  },
+});

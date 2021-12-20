@@ -662,67 +662,15 @@
   <div class="w-100">
     <h2 class="section_title">Recently Added</h2>
     <div class="recently_added">
-      <div class="card_item two space-x-10">
-        <div class="card_head">
-          <img src="../../assets/img/items/item4.png" alt="nft" />
-        </div>
-        <div class="card_body space-x-20">
-          <div>
-            <a href="#">
-              <h6 class="card_title">Punlk #1</h6>
-            </a>
-            <a href="#">
-              <p class="avatars_name txt_sm">@makinzi_jamy</p>
-            </a>
-          </div>
-          <div>
-            <span class="date">1 days ago</span>
-          </div>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <div class="card_item two space-x-10">
-        <div class="card_head">
-          <img src="../../assets/img/items/item5.png" alt="nft" />
-        </div>
-        <div class="card_body space-x-20">
-          <div>
-            <a href="#">
-              <h6 class="card_title">Punlk #2</h6>
-            </a>
-            <a href="#">
-              <p class="avatars_name txt_sm">@kolten_hart</p>
-            </a>
-          </div>
-          <div>
-            <span class="date">2 days ago</span>
-          </div>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <div class="card_item two space-x-10">
-        <div class="card_head">
-          <img src="../../assets/img/items/item6.png" alt="nft" />
-        </div>
-        <div class="card_body space-x-20">
-          <div>
-            <a href="#">
-              <h6 class="card_title">Punlk #3</h6>
-            </a>
-            <a href="#">
-              <p class="avatars_name txt_sm">@leonel_carey</p>
-            </a>
-          </div>
-          <div>
-            <span class="date">5 days ago</span>
-          </div>
-        </div>
-      </div>
-      <div class="nhr"></div>
+      <canvas
+        class="chart"
+        id="gradient-chart"
+        style="height: 270px; width: 100%"
+      ></canvas>
     </div>
   </div>
   <div class="top_creators">
-    <h2 class="section_title">Top Creators</h2>
+    <h2 class="section_title">Global Popular</h2>
     <div class="creators_wrap">
       <div class="card_item three space-x-10">
         <div class="card_head">
@@ -730,9 +678,6 @@
         </div>
         <div class="card_body">
           <div>
-            <div class="text_sm">
-              16.58 <span class="color_text">ETH</span>
-            </div>
             <a href="#">
               <div
                 class="
@@ -744,17 +689,12 @@
                 "
               >
                 <span>makinzi_jamy</span>
-                <i class="ri-checkbox-circle-line color_green"></i>
               </div>
             </a>
-            <div class="color_text">@fennouni</div>
           </div>
-          <div class="space-y-10">
-            <a href="#" class="icon">
-              <i class="ri-add-line"></i>
-            </a>
-            <div>
-              <span class="rank">#1</span>
+          <div>
+            <div class="text_sm">
+              16.58 <span class="color_text">ETH</span>
             </div>
           </div>
         </div>
@@ -765,9 +705,6 @@
         </div>
         <div class="card_body">
           <div>
-            <div class="text_sm">
-              16.58 <span class="color_text">ETH</span>
-            </div>
             <a href="#">
               <div
                 class="
@@ -779,17 +716,12 @@
                 "
               >
                 <span>makinzi_jamy</span>
-                <i class="ri-checkbox-circle-line color_green"></i>
               </div>
             </a>
-            <div class="color_text">@fennouni</div>
           </div>
-          <div class="space-y-10">
-            <a href="#" class="icon">
-              <i class="ri-add-line"></i>
-            </a>
-            <div>
-              <span class="rank">#2</span>
+          <div>
+            <div class="text_sm">
+              16.58 <span class="color_text">ETH</span>
             </div>
           </div>
         </div>
@@ -800,9 +732,6 @@
         </div>
         <div class="card_body">
           <div>
-            <div class="text_sm">
-              16.58 <span class="color_text">ETH</span>
-            </div>
             <a href="#">
               <div
                 class="
@@ -814,17 +743,12 @@
                 "
               >
                 <span>makinzi_jamy</span>
-                <i class="ri-checkbox-circle-line color_green"></i>
               </div>
             </a>
-            <div class="color_text">@fennouni</div>
           </div>
-          <div class="space-y-10">
-            <a href="#" class="icon">
-              <i class="ri-add-line"></i>
-            </a>
-            <div>
-              <span class="rank">#3</span>
+          <div>
+            <div class="text_sm">
+              16.58 <span class="color_text">ETH</span>
             </div>
           </div>
         </div>
@@ -845,6 +769,8 @@
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/sticky-sidebar.js"></script>
+    <script src="../assets/js/jquery.sparkline.min.js"></script>
+    <script src="../assets/js/sparkline.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/script.js"></script>
   </body>

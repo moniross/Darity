@@ -15,9 +15,18 @@
 .trending_auctions {
   position: relative;
 }
-
+.auction_card {
+  .icon {
+    width: 16px;
+  }
+  .items_number {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
 // Aside marketplace
-.aside_marketplace {
+.aside_marketplace,
+.aside_auction {
   overflow: hidden;
   min-width: 324px;
   margin-left: 15px;
@@ -29,7 +38,8 @@
   @include max-md {
     display: block;
   }
-  .recently_added {
+  .recently_added,
+  .auction_card {
     background-image: url(../img/bg/gardient_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,13 +94,22 @@
     object-fit: cover;
   }
 }
-
+.last_transactions {
+  .table-resposive {
+    max-width: 700px;
+    min-width: 100%;
+  }
+}
 .last_transactions,
 .items_table {
-  overflow-x: auto;
+  .table-resposive {
+    overflow-x: auto;
+  }
 }
 .section_auctions {
   display: flex;
+  overflow: hidden;
+  position: relative;
   @include max-lg {
     max-width: max-content;
     flex-direction: column;

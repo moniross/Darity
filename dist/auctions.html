@@ -390,7 +390,7 @@
         </div>
     </div>    <div class="main_container ">
       <div class="section_auctions">
-        <div ><div class="trending_auctions mt-20 space-x-20">
+        <div class="w-100"><div class="trending_auctions mt-20 space-x-20">
   <h2 class="section_title">NFT Auctions</h2>
   <div class="row m-0 mb-30_reset">
     <div class="col-lg-4 col-md-4 col-sm-6">
@@ -592,77 +592,102 @@
       </div>
     </div>
   </div>
-
-  <table class="table custom_table custom_tableé">
-    <thead>
-      <tr>
-        <th scope="col"><span>Type</span></th>
-        <th scope="col"><span>Item</span></th>
-        <th scope="col"><span>Date</span></th>
-        <th scope="col"><span>Blockchain</span></th>
-        <th scope="col"><span>Token ID</span></th>
-        <th scope="col"><span>Price</span></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <span class="color_green">Artwork</span>
-        </td>
-        <td><span class="color_text">Spider Eyes Modern Art </span></td>
-        <td><span class="color_text">Sep 7 , 2022</span></td>
-        <td><span class="color_text">Ethereum</span></td>
-        <td><span class="color_text">718159732</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">5.21</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class="color_green">Tickets</span>
-        </td>
-        <td><span class="color_text">Liquid Forest event </span></td>
-        <td><span class="color_text">Sep 8 , 2022</span></td>
-        <td><span class="color_text">Ethereum</span></td>
-        <td><span class="color_text">228159932</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">3,06</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span class="color_green">Music</span>
-        </td>
-        <td><span class="color_text">Contemporary Abstract </span></td>
-        <td><span class="color_text">Sep 11 , 2022</span></td>
-        <td><span class="color_text">Ethereum</span></td>
-        <td><span class="color_text">108158212</span></td>
-        <td>
-          <div class="d-flex space-x-4">
-            <img src="../../assets/img/icons/eth.svg" alt="" />
-            <span class="color_green">4,56</span>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="table-resposive">
+    <table class="table custom_table custom_table2">
+      <thead>
+        <tr>
+          <th scope="col"><span>Type</span></th>
+          <th scope="col"><span>Item</span></th>
+          <th scope="col"><span>Date</span></th>
+          <th scope="col"><span>Blockchain</span></th>
+          <th scope="col"><span>Token ID</span></th>
+          <th scope="col"><span>Price</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="color_green">Artwork</span>
+          </td>
+          <td><span class="color_text">Spider Eyes Modern Art </span></td>
+          <td><span class="color_text">Sep 7 , 2022</span></td>
+          <td><span class="color_text">Ethereum</span></td>
+          <td><span class="color_text">718159732</span></td>
+          <td>
+            <div class="d-flex space-x-4">
+              <img src="../../assets/img/icons/eth.svg" alt="" />
+              <span class="color_green">5.21</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="color_green">Tickets</span>
+          </td>
+          <td><span class="color_text">Liquid Forest event </span></td>
+          <td><span class="color_text">Sep 8 , 2022</span></td>
+          <td><span class="color_text">Ethereum</span></td>
+          <td><span class="color_text">228159932</span></td>
+          <td>
+            <div class="d-flex space-x-4">
+              <img src="../../assets/img/icons/eth.svg" alt="" />
+              <span class="color_green">3,06</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="color_green">Music</span>
+          </td>
+          <td><span class="color_text">Contemporary Abstract </span></td>
+          <td><span class="color_text">Sep 11 , 2022</span></td>
+          <td><span class="color_text">Ethereum</span></td>
+          <td><span class="color_text">108158212</span></td>
+          <td>
+            <div class="d-flex space-x-4">
+              <img src="../../assets/img/icons/eth.svg" alt="" />
+              <span class="color_green">4,56</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 </div>
-        <div ><div class="aside_marketplace">
+        <div ><div class="aside_auction">
   <div class="w-100">
-    <h2 class="section_title">Recently Added</h2>
-    <div class="recently_added">
-      <canvas
-        class="chart"
-        id="gradient-chart"
-        style="height: 270px; width: 100%"
-      ></canvas>
+    <div class="auction_card space-y-10">
+      <div class="d-flex align-items-center space-x-10">
+        <img
+          class="icon img-fluid"
+          src="../../assets/img/icons/eth2.svg"
+          alt=""
+        />
+        <span class="color_white txt _bold">Eth Rate</span>
+      </div>
+      <div>
+        <span class="items_number">$ 4, 458,122 USD</span>
+      </div>
+      <div>
+        <canvas
+          class="chart"
+          id="gradient-chart"
+          style="height: 270px; width: 100%"
+        ></canvas>
+      </div>
+      <div class="d-flex justify-content-between">
+        <span>Purchase</span>
+        <span class="color_green">3.220</span>
+      </div>
+      <div class="d-flex justify-content-between">
+        <span>Value</span>
+        <span class="color_red">-1.01%</span>
+      </div>
+      <div class="d-flex justify-content-between">
+        <span>Change</span>
+        <span class="color_red">-41.96$</span>
+      </div>
     </div>
   </div>
   <div class="top_creators">
@@ -768,6 +793,8 @@
     <script src="assets/js/jquery.sparkline.min.js"></script>
     <script src="assets/js/sparkline.js"></script>
     <script src="assets/js/chart.js"></script>
+    <script src="assets/js/transactions.js"></script>
+    <script src="assets/js/activity.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -148,42 +148,6 @@ $(".line-blue").sparkline([80, 100, 80, 100, 90, 100], {
   fillColor: "#15355A",
 });
 
-// //Gradient Chart
-var gradientCtx = document.getElementById("gradient-chart").getContext("2d");
-gradientCtx.height = 150;
-
-var bar_chart = new Chart(gradientCtx, {
-  type: "line",
-  backgroundColor: "red",
-  data: {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-      {
-        data: [65, 59, 80, 81, 56, 55, 40],
-        backgroundColor: "#163E61",
-        borderColor: "#2DCEE3",
-      },
-    ],
-  },
-  options: {
-    legend: {
-      display: false,
-    },
-    maintainAspectRatio: false,
-  },
-  scales: {
-    yAxes: [
-      {
-        stacked: true,
-        ticks: {
-          min: 0,
-          stepSize: 40,
-        },
-      },
-    ],
-  },
-});
-
 // countdown
 
 function makeTimer() {

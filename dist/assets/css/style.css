@@ -12742,11 +12742,11 @@ p a.btn:hover {
 .btn_light {
   background: #ffffff21;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
 }
 .btn_light:focus, .btn_light:hover {
   background: #ffffff21;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   color: #ffffff;
 }
 
@@ -12771,7 +12771,7 @@ p a.btn:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(#10173e)), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.19)), to(rgba(255, 255, 255, 0)));
@@ -12789,7 +12789,7 @@ p a.btn:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13732,7 +13732,6 @@ label:active:after {
 
 .card_item.one {
   margin-bottom: 30px;
-  max-width: 280px;
 }
 @media screen and (max-width: 576px) {
   .card_item.one {
@@ -13746,7 +13745,6 @@ label:active:after {
   -webkit-transform: scale(1);
           transform: scale(1);
   position: relative;
-  margin-top: 38px;
   -webkit-perspective: 160px;
           perspective: 160px;
   -webkit-perspective-origin: 50% -100%;
@@ -13781,37 +13779,6 @@ label:active:after {
   position: relative;
   display: grid;
   place-items: center;
-}
-.card_item.one .card_head .card_img::before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#161f50), to(rgba(16, 23, 62, 0)));
-  background: linear-gradient(180deg, #161f50 0%, rgba(16, 23, 62, 0) 100%);
-  z-index: -1;
-  -webkit-transform: translate3D(0, 0, -20px);
-          transform: translate3D(0, 0, -20px);
-}
-.card_item.one .card_head .card_img::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#10173e), to(rgba(16, 23, 62, 0)));
-  background: linear-gradient(180deg, #10173e 0%, rgba(16, 23, 62, 0) 100%);
-  z-index: -2;
-  -webkit-transform: translate3D(0, 0, -40px);
-          transform: translate3D(0, 0, -40px);
-}
-.card_item.one .card_head .card_img,
-.card_item.one .card_head .card_img::before,
-.card_item.one .card_head .card_img::after {
-  border-radius: 8px;
-}
-.card_item.one .card_head .card_img::before,
-.card_item.one .card_head .card_img::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  display: block;
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
-  transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
 }
 .card_item.one .card_head .icon {
   position: absolute;
@@ -13894,7 +13861,7 @@ label:active:after {
   background-repeat: no-repeat;
   background-position: top;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
 }
 .card_item.three .card_body {
@@ -13950,7 +13917,7 @@ label:active:after {
   background-repeat: no-repeat;
   background-position: top;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -14009,7 +13976,7 @@ label:active:after {
 .card_item.five {
   background-color: #10173e;
   padding: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14029,7 +13996,7 @@ label:active:after {
   background-repeat: no-repeat;
   background-position: top;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
   width: 60px;
   height: 60px;
@@ -15154,6 +15121,7 @@ table tbody td:last-child {
 
 .section_title {
   margin-bottom: 20px;
+  font-size: 28px;
 }
 
 .section__head {
@@ -15167,7 +15135,7 @@ table tbody td:last-child {
 .aside_marketplace {
   overflow: hidden;
   min-width: 324px;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 1260px) {
   .aside_marketplace {
@@ -15189,7 +15157,7 @@ table tbody td:last-child {
   background-repeat: no-repeat;
   background-position: top;
   padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  border: 1px solid transparent;
   border-radius: 10px;
 }
 @media screen and (max-width: 1260px) {

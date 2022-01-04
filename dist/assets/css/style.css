@@ -14193,7 +14193,7 @@ label:active:after {
 }
 .sidebar .price {
   padding: 30px 20px;
-  background-color: #354DD4;
+  background-color: #354dd4;
   background-image: url(../img/deco.svg);
   background-size: cover;
   border-radius: 20px;
@@ -14270,6 +14270,8 @@ label:active:after {
 }
 .sidebar .sidabar_content .categories {
   overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 @media screen and (max-width: 768px) {
   .sidebar .sidabar_content .categories {
@@ -14320,6 +14322,17 @@ label:active:after {
 .sidebar .sidabar_content .categories .marketplace_pages .list_items li:last-of-type,
 .sidebar .sidabar_content .categories .account_pages .list_items li:last-of-type {
   margin-bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li,
+.sidebar .sidabar_content .categories .account_pages .list_items li {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li:last-of-type,
+.sidebar .sidabar_content .categories .account_pages .list_items li:last-of-type {
+    margin-right: 0;
+  }
 }
 .sidebar .sidabar_content .categories .marketplace_pages .list_items li a,
 .sidebar .sidabar_content .categories .account_pages .list_items li a {
@@ -14392,6 +14405,16 @@ label:active:after {
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
+  }
+}
+.sidebar .sidabar_content .categories .marketplace_pages .list_items li a .pro_img,
+.sidebar .sidabar_content .categories .account_pages .list_items li a .pro_img {
+  display: block;
+}
+@media screen and (max-width: 1400px) {
+  .sidebar .sidabar_content .categories .marketplace_pages .list_items li a .pro_img,
+.sidebar .sidabar_content .categories .account_pages .list_items li a .pro_img {
+    display: none;
   }
 }
 .sidebar .sidabar_content .categories .marketplace_pages .list_items li a .tooltip,

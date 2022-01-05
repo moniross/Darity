@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+## btn styles
+--------------------------------------------------------------*/
+
+input[type="submit"],
+.btn,
+a.btn input.btn,
+a.button,
+span.button,
+div.button {
+    padding: 9px 18px;
+    min-height: 20px;
+    line-height: 20px;
+    @include animate();
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    outline: none;
+    position: relative;
+    text-align: center;
+    border-radius: 200px;
+    overflow: hidden;
+    will-change: transform, box-shadow;
+    &:not(.btn-outline):not(.btn-flat):not(.btn-link) {
+        .text {
+            color: #fff;
+        }
+    }
+    i {
+        vertical-align: middle;
+        margin-top: -16px !important;
+        position: relative;
+        top: -1px;
+        font-size: 20px;
+        position: relative;
+        stroke: 2px;
+        min-width: 20px;
+        height: 20px;
+    }
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $color_brand;
+        border-color: $color_brand;
+        opacity: 0.9;
+        outline: none;
+        box-shadow: inherit;
+        opacity: 0.9;
+    }
+}
+
+p a.btn {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+/* =====================================================
+- - - - - - - - - 1/ Button sizes
+======================================================*/
+
+.btn_sm {
+    padding: 6px 16px;
+    border-radius: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.btn_lg {
+    padding: 7px 25px;
+    line-height: 1.7;
+}
+
+
+/* ==================================================+===
+- - - - - - - - - 2/ Button variations
+=======================================================*/
+
+.btn_primary {
+    color: white;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    background: $color_brand;
+    position: relative;
+    &:hover {
+        color: white;
+        border: none;
+    }
+}
+
+.btn-white {
+    background: rgba(255, 255, 255, 0.13);
+    color: $color_white;
+}
+
+.btn_secondary {
+    background: $color_secondary;
+    color: $color_white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    background-image: linear-gradient(#10173e, #10173e), linear-gradient( 180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: none;
+    padding: 1px;
+    .wrapper {
+        padding: 12px 18px;
+    }
+    &:hover,
+    &:focus {
+        color: $color_white;
+        background: $color_secondary;
+        background-image: linear-gradient(#10173e, #10173e), linear-gradient( 180deg, rgba(255, 255, 255, 0.19) 0%, rgba(255, 255, 255, 0) 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border: none;
+    }
+}
+
+.btn_light {
+    background: $color_light;
+    color: $color_white;
+    border: 1px solid $color_border;
+    &:focus,
+    &:hover {
+        background: $color_light;
+        border: 1px solid $color_border;
+        color: $color_white;
+    }
+}
+
+.btn_verify {
+    color: #36b37e;
+    background-color: rgba(54, 179, 126, 0.22);
+    &:hover {
+        color: #36b37e;
+        background-color: rgba(54, 179, 126, 0.22);
+    }
+}

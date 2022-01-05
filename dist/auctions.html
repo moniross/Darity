@@ -28,167 +28,176 @@
   <body class="body">
     <div class="overflow-hidden">
 <header class="header__1 js-header" id="header">
-    <div class="container-fluid">
-        <div class="wrapper js-header-wrapper">
-            <div class="header__logo">
-                <a href="/">
-                    <img class="header__logo" id="logo_js" src="assets/img/logos/Logo.svg" alt="logo" />
-                </a>
-            </div>
+  <div class="container-fluid">
+    <div class="wrapper js-header-wrapper">
+      <div class="header__logo">
+        <a href="/">
+          <img
+            class="header__logo"
+            id="logo_js"
+            src="assets/img/logos/Logo.svg"
+            alt="logo"
+          />
+        </a>
+      </div>
 
-            <!-- ================= -->
-            <div class="header__search">
-                <input type="text" placeholder="Seach in marketplace" />
-                <button class="header__result">
+      <!-- ================= -->
+      <div class="header__search">
+        <input type="text" placeholder="Seach in marketplace" />
+        <button class="header__result">
           <i class="ri-search-line"></i>
         </button>
+      </div>
+      <div class="d-flex align-items-center space-x-20">
+        <div class="header__notifications">
+          <div class="js-notifications-icon">
+            <i class="ri-notification-3-line"></i>
+          </div>
+          <div class="notifications_popup">
+            <div class="notifications_wrap space-y-20">
+              <div class="d-flex justify-content-between">
+                <h5>Notifications</h5>
+              </div>
+              <div
+                class="item space-x-20 d-flex justify-content-between align-items-center"
+              >
+                <img
+                  class="thumb"
+                  src="assets/img/notifications/1.png"
+                  alt="..."
+                />
+                <div class="details">
+                  <a href="activity.html">
+                    <h6>Money revieved</h6>
+                  </a>
+                  <p>0.6 ETH</p>
+                </div>
+                <span class="circle"></span>
+              </div>
             </div>
-            <div class="d-flex align-items-center space-x-20">
-                <div class="header__notifications">
-                    <div class="js-notifications-icon">
-                        <i class="ri-notification-3-line"></i>
-                    </div>
-                    <div class="notifications_popup">
-                        <div class="notifications_wrap space-y-20">
-                            <div class="d-flex justify-content-between">
-                                <h5>Notifications</h5>
-                            </div>
-                            <div class="
-                  item
-                  space-x-20
-                  d-flex
-                  justify-content-between
-                  align-items-center
-                ">
-                                <img class="thumb" src="assets/img/notifications/1.png" alt="..." />
-                                <div class="details">
-                                    <a href="activity.html">
-                                        <h6>Money revieved</h6>
-                                    </a>
-                                    <p>0.6 ETH</p>
-                                </div>
-                                <span class="circle"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__btns">
-                    <a class="btn btn_primary btn-sm" href="#">Create</a>
-                </div>
-                <div class="header__avatar">
-                    <img class="avatar" src="assets/img/avatars/profile.png" alt="avatar" />
-                    <div class="price">
-                        <span>2.45 <strong>ETH</strong> </span>
-                    </div>
+          </div>
+        </div>
+        <div class="header__btns">
+          <a class="btn btn_primary btn-sm" href="#">Create</a>
+        </div>
+        <div class="header__avatar">
+          <img
+            class="avatar"
+            src="assets/img/avatars/profile.png"
+            alt="avatar"
+          />
+          <div class="price">
+            <span>2.45 <strong>ETH</strong> </span>
+          </div>
 
-                    <div class="avatar_popup">
-                        <div class="avatar_wrap space-y-20">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <span> 13b9ebda035r178... </span>
-                                <a href="/" class="ml-10">
-                                    <i class="ri-file-copy-line"></i>
-                                </a>
-                            </div>
-                            <div class="d-flex align-items-center space-x-10">
-                                <img class="coin" src="assets/img/icons/coin.svg" alt="/" />
-                                <div class="info">
-                                    <p class="text-sm font-book text-gray-400">Balance</p>
-                                    <p class="w-full text-sm font-bold text-green-500">
-                                        16.58 ETH
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="hr"></div>
-                            <div class="links space-y-10">
-                                <a href="#">
-                                    <i class="ri-landscape-line"></i> <span> My items</span>
-                                </a>
-                                <a href="edit_profile.html">
-                                    <i class="ri-pencil-line"></i> <span> Edit Profile</span>
-                                </a>
-                                <a href="#" class="logout">
-                                    <i class="ri-logout-circle-line"></i> <span> Logout</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="avatar_popup">
+            <div class="avatar_wrap space-y-20">
+              <div class="d-flex align-items-center justify-content-between">
+                <span> 13b9ebda035r178... </span>
+                <a href="/" class="ml-10">
+                  <i class="ri-file-copy-line"></i>
+                </a>
+              </div>
+              <div class="d-flex align-items-center space-x-10">
+                <img class="coin" src="assets/img/icons/coin.svg" alt="/" />
+                <div class="info">
+                  <p class="text-sm font-book text-gray-400">Balance</p>
+                  <p class="w-full text-sm font-bold text-green-500">
+                    16.58 ETH
+                  </p>
                 </div>
-
-                <div class="header__burger js-header-burger"></div>
+              </div>
+              <div class="hr"></div>
+              <div class="links space-y-10">
+                <a href="#">
+                  <i class="ri-landscape-line"></i> <span> My items</span>
+                </a>
+                <a href="edit_profile.html">
+                  <i class="ri-pencil-line"></i> <span> Edit Profile</span>
+                </a>
+                <a href="#" class="logout">
+                  <i class="ri-logout-circle-line"></i> <span> Logout</span>
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="header__mobile js-header-mobile">
-                <div class="header__mobile__menu space-y-40">
-                    <ul class="d-flex space-y-20">
-                        <li>
-                            <a href="/" class="active">
-                                <p class="links_name">Marketplace</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="overview.html">
-                                <p class="links_name">Overview</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="items.html">
-                                <p class="links_name">My items</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="activity.html">
-                                <p class="links_name">Activity</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="auctions.html">
-                                <p class="links_name">Auctions</p>
-                            </a>
-                        </li>
-            
-                    </ul>
-            
-                </div>
-            </div>        </div>
-    </div>
+        <div class="header__burger js-header-burger"></div>
+      </div>
+
+      <div class="header__mobile js-header-mobile">
+          <div class="header__mobile__menu space-y-40">
+              <ul class="d-flex space-y-20">
+                  <li>
+                      <a href="/" class="active">
+                          <p class="links_name">Marketplace</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="overview.html">
+                          <p class="links_name">Overview</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="items.html">
+                          <p class="links_name">My items</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="activity.html">
+                          <p class="links_name">Activity</p>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="auctions.html">
+                          <p class="links_name">Auctions</p>
+                      </a>
+                  </li>
+      
+              </ul>
+      
+          </div>
+      </div>    </div>
+  </div>
 </header>
 
 <!-- ====== headers -->
 <header class="header__1 js-header header_wallet" id="header_admin">
-    <div class="container">
-        <div class="wrapper js-header-wrapper space-x-10">
-            <div class="header__logo">
-                <a href="/">
-                    <img class="header__logo" id="logo_js" src="assets/img/logos/Logo.svg" alt="logo" />
-                </a>
-            </div>
+  <div class="container">
+    <div class="wrapper js-header-wrapper space-x-10">
+      <div class="header__logo">
+        <a href="/">
+          <img
+            class="header__logo"
+            id="logo_js"
+            src="assets/img/logos/Logo.svg"
+            alt="logo"
+          />
+        </a>
+      </div>
 
-            <!-- ================== -->
-            <div class="header__search">
-                <input type="text" placeholder="Search" />
-                <button class="header__result">
+      <!-- ================== -->
+      <div class="header__search">
+        <input type="text" placeholder="Search" />
+        <button class="header__result">
           <i class="ri-search-line"></i>
         </button>
-            </div>
-            <div class="d-flex align-items-center space-x-20">
-                <div class="header__notifications">
-                    <div class="js-notifications-icon">
-                        <i class="ri-notification-3-line"></i>
-                    </div>
-                    <div class="notifications_popup space-y-20">
-                        <div class="d-flex justify-content-between">
-                            <h5>Notifications</h5>
-                            <a href="Activity.html" class="badge color_white">View all</a
+      </div>
+      <div class="d-flex align-items-center space-x-20">
+        <div class="header__notifications">
+          <div class="js-notifications-icon">
+            <i class="ri-notification-3-line"></i>
+          </div>
+          <div class="notifications_popup space-y-20">
+            <div class="d-flex justify-content-between">
+              <h5>Notifications</h5>
+              <a href="Activity.html" class="badge color_white"
+                >View all</a
               >
             </div>
             <div
-              class="
-                item
-                space-x-20
-                d-flex
-                justify-content-between
-                align-items-center
-              "
+              class="item space-x-20 d-flex justify-content-between align-items-center"
             >
               <img
                 class="thumb"
@@ -199,47 +208,56 @@
                 <a href="activity.html">
                   <h6>Money revieved</h6>
                 </a>
-                            <p>0.6 ETH</p>
-                        </div>
-                        <span class="circle"></span>
-                    </div>
-                </div>
+                <p>0.6 ETH</p>
+              </div>
+              <span class="circle"></span>
             </div>
-            <div class="header__avatar">
-                <div class="price">
-                    <span>2.45 <strong>ETH</strong> </span>
-                </div>
-                <img class="avatar" src="assets/img/avatars/avatar_2.png" alt="avatar" />
-                <div class="avatar_popup space-y-20">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <span> 13b9ebda035r178... </span>
-                        <a href="/" class="ml-2">
-                            <i class="ri-file-copy-line"></i>
-                        </a>
-                    </div>
-                    <div class="d-flex align-items-center space-x-10">
-                        <img class="coin" src="assets/img/logos/coin.svg" alt="/" />
-                        <div class="info">
-                            <p class="text-sm font-book text-gray-400">Balance</p>
-                            <p class="w-full text-sm font-bold text-green-500">16.58 ETH</p>
-                        </div>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="links space-y-10">
-                        <a href="#">
-                            <i class="ri-landscape-line"></i> <span> My items</span>
-                        </a>
-                        <a href="edit_profile.html">
-                            <i class="ri-pencil-line"></i> <span> Edit Profile</span>
-                        </a>
-                        <a href="#">
-                            <i class="ri-logout-circle-line"></i> <span> Logout</span>
-                        </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="header__avatar">
+          <div class="price">
+            <span>2.45 <strong>ETH</strong> </span>
+          </div>
+          <img
+            class="avatar"
+            src="assets/img/avatars/avatar_2.png"
+            alt="avatar"
+          />
+          <div class="avatar_popup space-y-20">
+            <div class="d-flex align-items-center justify-content-between">
+              <span> 13b9ebda035r178... </span>
+              <a href="/" class="ml-2">
+                <i class="ri-file-copy-line"></i>
+              </a>
             </div>
-            <div class="header__btns">
-                <a class="btn btn-primary btn-sm" href="Upload-type.html">Create</a
+            <div class="d-flex align-items-center space-x-10">
+              <img
+                class="coin"
+                src="assets/img/logos/coin.svg"
+                alt="/"
+              />
+              <div class="info">
+                <p class="text-sm font-book text-gray-400">Balance</p>
+                <p class="w-full text-sm font-bold text-green-500">16.58 ETH</p>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="links space-y-10">
+              <a href="#">
+                <i class="ri-landscape-line"></i> <span> My items</span>
+              </a>
+              <a href="edit_profile.html">
+                <i class="ri-pencil-line"></i> <span> Edit Profile</span>
+              </a>
+              <a href="#">
+                <i class="ri-logout-circle-line"></i> <span> Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__btns">
+          <a class="btn btn-primary btn-sm" href="Upload-type.html"
+            >Create</a
           >
         </div>
         <div class="header__burger js-header-burger"></div>
@@ -278,7 +296,8 @@
           </div>
       </div>    </div>
   </div>
-</header><div class="main">
+</header>
+<div class="main">
   <div >
     <!-- sidebar -->
     <div class="sidebar" id="sidebar">

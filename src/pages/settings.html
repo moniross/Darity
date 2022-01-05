@@ -1,138 +1,112 @@
 {{> header}}
 <div class="main">
-  <div>
-    {{> sidebar}}
-    <div class="main_container">
-      <div class="settings space-y-20">
-        <div class="space-y-5">
-          <h2>Profile</h2>
-          <p>Welcome Darity Settings Profile page</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <h5 class="mb-20">User Profile</h5>
-            <div class="box style_one">
-              <div class="wrap space-y-20">
-                <div class="space-y-10">
-                  <span>Full Name</span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter Full Name"
-                  />
+    <div>
+        {{> sidebar}}
+        <div class="main_container">
+            <div class="settings space-y-20">
+                <div class="space-y-5">
+                    <h2>Profile</h2>
+                    <p>Welcome Darity Settings Profile page</p>
                 </div>
-                <div class="d-flex align-items-center mb-3">
-                  <div class="position-relative">
-                    <img
-                      id="profileImage"
-                      class="me-3 rounded-circle me-0 me-sm-3"
-                      src="../assets/img/avatars/profile.png"
-                      alt=""
-                      width="55"
-                      height="55"
-                    />
-                    <input
-                      id="imageUpload"
-                      type="file"
-                      name="profile_photo"
-                      placeholder="Photo"
-                      required=""
-                      capture=""
-                    />
-                  </div>
-                  <div class="media-body">
-                    <span class="txt _bold">Jannatul Maowa</span>
-                    <p>Max file size is 20mb</p>
-                  </div>
-                </div>
-                <div>
-                  <a href="#" class="btn btn_primary">Save</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h5 class="mb-20">Update Profile</h5>
-            <div class="box style_one">
-              <div class="wrap space-y-20">
-                <div class="space-y-10">
-                  <span>Email</span>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter email"
-                  />
-                </div>
-                <div class="space-y-10">
-                  <span>Password</span>
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Enter your password"
-                  />
-                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5 class="mb-20">User Profile</h5>
+                        <div class="box style_one">
+                            <div class="wrap space-y-20">
+                                <div class="space-y-10">
+                                    <span>Full Name</span>
+                                    <input type="text" class="form-control" placeholder="Enter Full Name" />
+                                </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="position-relative">
+                                        <img id="profileImage" class="me-3 rounded-circle me-0 me-sm-3" src="assets/img/avatars/profile.png" alt="" width="55" height="55" />
+                                        <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture="" />
+                                    </div>
+                                    <div class="media-body">
+                                        <span class="txt _bold">Jannatul Maowa</span>
+                                        <p>Max file size is 20mb</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn_primary">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5 class="mb-20">Update Profile</h5>
+                        <div class="box style_one">
+                            <div class="wrap space-y-20">
+                                <div class="space-y-10">
+                                    <span>Email</span>
+                                    <input type="email" class="form-control" placeholder="Enter email" />
+                                </div>
+                                <div class="space-y-10">
+                                    <span>Password</span>
+                                    <input type="password" class="form-control" placeholder="Enter your password" />
+                                </div>
 
-                <div>
-                  <a href="#" class="btn btn_primary">Save</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <h5 class="mb-20">Personal Information</h5>
-            <div class="box style_one">
-              <div class="wrap space-y-20">
-                <div class="row mb-20_reset">
-                  <div class="col-lg-6 mb-20">
-                    <div class="space-y-10">
-                      <span>Full Name</span>
-                      <input type="text" class="form-control" />
+                                <div>
+                                    <a href="#" class="btn btn_primary">Save</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-lg-6 mb-20">
-                    <div class="space-y-10">
-                      <span>Email</span>
-                      <input type="text" class="form-control" />
-                    </div>
-                </div>
-                    <div class="col-lg-6  mb-20">
-                      <div class="space-y-10">
-                        <span>Address</span>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6  mb-20">
-                      <div class="space-y-10">
-                        <span>City</span>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6  mb-20">
-                      <div class="space-y-10">
-                        <span>Post Code</span>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-6  mb-20">
-                      <div class="space-y-10">
-                        <span>Country</span>
-                        <select class="form-select custom-select" aria-label="Default select example">
+                    <div class="col-lg-12">
+                        <h5 class="mb-20">Personal Information</h5>
+                        <div class="box style_one">
+                            <div class="wrap space-y-20">
+                                <div class="row mb-20_reset">
+                                    <div class="col-lg-6 mb-20">
+                                        <div class="space-y-10">
+                                            <span>Full Name</span>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-20">
+                                        <div class="space-y-10">
+                                            <span>Email</span>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  mb-20">
+                                        <div class="space-y-10">
+                                            <span>Address</span>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  mb-20">
+                                        <div class="space-y-10">
+                                            <span>City</span>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  mb-20">
+                                        <div class="space-y-10">
+                                            <span>Post Code</span>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6  mb-20">
+                                        <div class="space-y-10">
+                                            <span>Country</span>
+                                            <select class="form-select custom-select" aria-label="Default select example">
                             <option>United States</option>
                             <option>United Kingdom</option>
                             <option>Germany</option>
                         </select>
-                      </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn_primary">Save</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                  <div>
-                    <a href="#" class="btn btn_primary">Save</a>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 </div>

@@ -1,70 +1,66 @@
 <div class="aside_marketplace">
-  <div class="w-100">
-    <h2 class="section_title">Recently Added</h2>
-    <div class="recently_added">
-      {{#each cards.items2}}
-      <div class="card_item two space-x-10">
-        <div class="card_head">
-          <img src="../../assets/img/items/item{{img}}.png" alt="nft" />
-        </div>
-        <div class="card_body space-x-20">
-          <div>
-            <a href="#">
-              <h6 class="card_title">{{title}}</h6>
-            </a>
-            <a href="#">
-              <p class="avatars_name txt_sm">@{{avatar_name}}</p>
-            </a>
-          </div>
-          <div>
-            <span class="date">{{date}} ago</span>
-          </div>
-        </div>
-      </div>
-      <div class="{{border}}"></div>
-      {{/each }}
-    </div>
-  </div>
-  <div class="top_creators">
-    <h2 class="section_title">Top Creators</h2>
-    <div class="creators_wrap">
-      {{#each cards.items3}}
-      <div class="card_item three space-x-10">
-        <div class="card_head">
-          <img src="../../assets/img/avatars/{{img}}.png" alt="creator" />
-        </div>
-        <div class="card_body">
-          <div>
-            <div class="text_sm">
-              {{sold}} <span class="color_text">ETH</span>
+    <div class="w-100">
+        <h2 class="section_title">Recently Added</h2>
+        <div class="recently_added">
+            {{#each cards.items2}}
+            <div class="card_item two space-x-10">
+                <div class="card_head">
+                    <img src="assets/img/items/item{{img}}.png" alt="nft" />
+                </div>
+                <div class="card_body space-x-20">
+                    <div>
+                        <a href="item-details.html">
+                            <h6 class="card_title">{{title}}</h6>
+                        </a>
+                        <a href="#">
+                            <p class="avatars_name txt_sm">@{{avatar_name}}</p>
+                        </a>
+                    </div>
+                    <div>
+                        <span class="date">{{date}} ago</span>
+                    </div>
+                </div>
             </div>
-            <a href="#">
-              <div
-                class="
+            <div class="{{border}}"></div>
+            {{/each }}
+        </div>
+    </div>
+    <div class="top_creators">
+        <h2 class="section_title">Top Creators</h2>
+        <div class="creators_wrap space-y-20">
+            {{#each cards.items3}}
+            <div class="card_item three space-x-10">
+                <div class="card_head">
+                    <img src="assets/img/avatars/{{img}}.png" alt="creator" />
+                </div>
+                <div class="card_body">
+                    <div>
+                        <div class="text_sm">
+                            {{sold}} <span class="color_text">ETH</span>
+                        </div>
+                        <a href="profile.html">
+                            <div class="
                   avatars_name
                   color_white
                   d-flex
                   align-items-center
                   space-x-5
-                "
-              >
-                <span>{{avatar_name}}</span>
-                <i class="ri-checkbox-circle-line color_green"></i>
-              </div>
-            </a>
-            <div class="color_text">{{collection_name}}</div>
-          </div>
-          <div class="space-y-10">
-            <a href="#" class="icon">
-              <i class="ri-add-line"></i>
-            </a>
-            <div>
-              <span class="rank">#{{rank}}</span>
+                ">
+                                <span>{{avatar_name}}</span>
+                                <i class="ri-checkbox-circle-line color_green"></i>
+                            </div>
+                        </a>
+                        <div class="color_text">{{collection_name}}</div>
+                    </div>
+                    <div class="space-y-10">
+
+                        <div>
+                            <span class="rank">#{{rank}}</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            {{/each }}
         </div>
-      </div>
-      {{/each }}
     </div>
-  </div>
 </div>

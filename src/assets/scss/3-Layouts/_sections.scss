@@ -5,7 +5,6 @@
 
 .section_title {
     margin-bottom: 20px;
-    font-size: 28px;
 }
 
 .section__head {
@@ -22,7 +21,7 @@
         width: 16px;
     }
     .items_number {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: bold;
     }
 }
@@ -65,93 +64,54 @@
     }
     .top_creators {
         overflow: hidden;
-        min-width: 324px;
-        margin-left: 20px;
+        margin-top: 30px;
         @include max-lg {
-            margin-top: 20px;
-            margin-left: 0;
-            display: flex;
+            width: 100%;
+            margin-top: 0;
+            margin-left: 20px;
         }
         @include max-md {
-            display: block;
+            width: auto;
+            margin-left: 0;
+            margin-top: 20px;
         }
-        .recently_added {
-            background-image: url(../img/bg/gardient_bg.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top;
-            padding: 20px;
-            border: 1px solid $color_border;
-            border-radius: 10px;
-            @include max-lg {
-                width: 100%;
-            }
+        .creators_wrap {
             .card_item {
                 margin-bottom: 20px;
-                &:nth-child(5) {
+                &:last-of-type {
                     margin-bottom: 0;
                 }
             }
-            .hr {
-                margin-bottom: 20px;
-            }
-        }
-        .top_creators {
-            overflow: hidden;
-            margin-top: 30px;
-            @include max-lg {
-                width: 100%;
-                margin-top: 0;
-                margin-left: 20px;
-            }
-            @include max-md {
-                width: auto;
-                margin-left: 0;
-                margin-top: 20px;
-            }
-            .creators_wrap {
-                .card_item {
-                    margin-bottom: 20px;
-                    &:last-of-type {
-                        margin-bottom: 0;
-                    }
-                }
-            }
         }
     }
-    .items_table {
-        .item_img {
-            width: 6.5rem;
-            height: 4.5rem;
-            box-shadow: 0 17px 13px 0 rgba(25, 44, 75, 0.0196078431372549);
-            border-radius: 10px;
-            object-fit: cover;
-        }
+}
+
+.items_table {
+    .item_img {
+        width: 6.5rem;
+        height: 4.5rem;
+        box-shadow: 0 17px 13px 0 rgba(25, 44, 75, 0.0196078431372549);
+        border-radius: 10px;
+        object-fit: cover;
     }
-    .last_transactions {
-        .table-resposive {
-            max-width: 700px;
-            min-width: 100%;
-        }
+}
+
+.last_transactions {
+    .table-resposive {
+        max-width: 700px;
+        min-width: 100%;
     }
-    .last_transactions,
-    .items_table {
-        <<<<<<< HEAD overflow-x: auto;
-        =======.table-resposive {
-            overflow-x: auto;
-        }
-        >>>>>>>f76b3dc7865bae807071fae44897bb85d3fce466
+}
+
+.last_transactions,
+.items_table {
+    .table-resposive {
+        overflow-x: auto;
     }
-    .section_auctions {
-        <<<<<<< HEAD display: flex;
-        @include max-lg {
-            max-width: max-content;
-            flex-direction: column;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-    =======display: flex;
+}
+
+.section_auctions {
+    display: flex;
     overflow: hidden;
     position: relative;
     @include max-lg {
@@ -162,4 +122,8 @@
     }
 }
 
->>>>>>>f76b3dc7865bae807071fae44897bb85d3fce466
+.item-details {
+    .img__item {
+        border-radius: 10px;
+    }
+}

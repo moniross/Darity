@@ -55,7 +55,7 @@
         }
         .card_body {
             .card_title {
-                font-size: 16px;
+                font-size: 22px;
             }
             .bid_details {
                 display: flex;
@@ -136,13 +136,17 @@
         border: 1px solid $color_border;
         border-radius: 10px;
         margin-bottom: 20px;
+        overflow: hidden;
+        canvas {
+            width: -webkit-fill-available !important;
+        }
         .icon {
             font-weight: bold;
             font-size: 19px;
         }
         .items_number,
         .sales_number {
-            font-size: 18px;
+            font-size: 26px;
             font-weight: bold;
         }
         .statistics {
@@ -189,7 +193,7 @@
         align-items: center;
         margin-bottom: 20px;
         .items_number {
-            font-size: 18px;
+            font-size: 26px;
             font-weight: bold;
         }
         .icon {
@@ -212,4 +216,8 @@
             }
         }
     }
+}
+
+.w-fill {
+    width: -webkit-fill-available;
 }

@@ -1,0 +1,794 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Darity Docs</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4216f4ec-0d12-4468-9816-646454a60a75" class="page sans"><header><h1 class="page-title">Darity Docs</h1></header><div class="page-body"><figure id="11831156-4fdd-4fd9-acea-6551633cc02c" class="image"><a href="Darity%20Docs%20118311564fdd4fd9acea6551633cc02c/logo-dark.png"><img style="width:177px" src="Darity%20Docs%20118311564fdd4fd9acea6551633cc02c/logo-dark.png"/></a></figure><h1 id="50ad99ca-d81b-4a58-862b-af37cfbfa91a" class="">Darity Documentation</h1><p id="f8a14e2d-f5d0-4841-a0fe-13eb584e4fae" class=""><a href="about:blank#2d8d8898-f17a-490b-8bca-23b16cbe1dab">Installation:</a></p><p id="92db2083-b669-49d8-a490-72d91e0dab9b" class=""><a href="about:blank#106414dd-5e8c-4d21-bca9-86d6866fb0cd">Prerequisites :</a></p><p id="bc47ecad-12e6-48ce-9221-70ff9e4ad8d4" class=""><a href="about:blank#2770964d-9029-4612-86ec-46cad3704116">Template structure:</a></p><p id="490cca74-3c57-4124-836f-11a6f3b40848" class=""><a href="about:blank#8d669e8d-dd62-4be6-b652-3544a7dd8928">Global structure:</a></p><p id="688a0478-8726-407d-8b64-184c55c40467" class=""><a href="about:blank#a14de88d-0ce1-4722-8e58-d199378f960e">Images:</a></p><p id="0b79ec13-fd9d-4d41-8d96-4bba25a0787c" class=""><a href="about:blank#d0f9c8b2-7a10-4f3e-86df-284f6e71a5ad">HTML Structure:</a></p><p id="8a04ec6e-d924-4c6d-a273-8e621fc299ec" class=""><a href="about:blank#d6e15ffa-957b-4eb3-88da-5347fb3cc584">Js:</a></p><p id="addd8370-844b-4c67-bb98-8b55573c8b76" class=""><a href="about:blank#0b607198-39ec-4f37-89a5-8755a4c7cf48">Scss:</a></p><p id="8b196a68-5e52-4e10-986d-c25e32582884" class=""><a href="about:blank#a528490f-e715-4f9b-8475-1d61e32739af">Customization:</a></p><p id="aa280928-5f58-4a1d-bc87-59d001d2d6b4" class=""><a href="about:blank#caaf0281-6d11-44ea-98ed-1ca8831e29f6">Change Main colors:</a></p><p id="39cad984-95b0-4dfc-a75b-20fcb853a750" class=""><a href="about:blank#844e3415-97d9-467d-9b58-a74ae050dcda">Change Logo:</a></p><p id="4229fa60-aceb-4ebb-b76d-11c7952cd07d" class=""><a href="about:blank#d27b16dc-08a0-4c53-b142-c2e1942acae9">Change Images:</a></p><p id="2b53a9d7-f899-4b34-9ba1-4919abb9627a" class=""><a href="about:blank#81bee3fe-8241-4423-8ada-f8bc7f136779">Changing Fonts:</a></p><p id="63ac0621-4e44-4d4e-a378-379fab3e3048" class=""><a href="about:blank#64e7c6f7-6c06-45ba-9a35-1432618df03d">Customer Support:</a></p><p id="01881d2f-5edc-4bcd-8c35-d54b89ef801f" class=""><a href="about:blank#d3dbb76e-c4db-43a9-8e17-917c10326f22">Support includes:</a></p><p id="3054f701-00bb-46e3-98e4-464fa44c3e1d" class=""><a href="about:blank#b2962422-4fd8-410c-b293-9cd6a7c38798">Support doesn&#x27;t include :</a></p><p id="985317ea-3dfd-45f6-9012-ef639becc44b" class=""><a href="about:blank#a645b087-2353-4c2b-aeb2-c003a4072564">Before Support:</a></p><p id="bd228352-c5f1-42ba-8d5f-db6613dc7302" class="">First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the <strong>Creabik team</strong> directly.</p><p id="f905566d-a87a-4b74-9228-db19b4e61cb6" class="">‌</p><p id="0acd3f04-24b6-4a19-b86a-d8900322d03e" class="">This documentation has been written to help you regarding each step of setup and customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML CSS, Sass, and JS knowledge are required to customize this template.</p><h1 id="a10cac30-b684-4cdd-a525-1ec5bc00e25d" class="">Installation:</h1><p id="0ea88b72-d6c4-42d4-9ccb-c08e2d45760c" class="">Follow the steps below to setup your site template:</p><h3 id="9b281d7a-24b1-4b89-8fd7-9a367b90457d" class="">Prerequisites :</h3><hr id="dfca6dfb-46fc-4326-af7c-16555ecad32c"/><p id="3d84701f-7558-4dcb-9bd7-8b8ad0c06c5e" class="">You will need the following tools to customize Addkit template.</p><ol type="1" id="ac4c516b-b3c5-4b08-b72c-1874add05e81" class="numbered-list" start="1"><li>A good code editor of your choice</li></ol><ol type="1" id="85c70fba-2a0a-4e0a-b808-68eb2b8c9d60" class="numbered-list" start="2"><li>A supported web browser</li></ol><ol type="1" id="b35e3061-7268-45e3-92d6-3e37a8a7957e" class="numbered-list" start="3"><li><code>node.js</code> and <code>npm</code> installed on your machine</li></ol><ol type="1" id="f8f3e40a-e8a6-409c-8168-867569ba3c0b" class="numbered-list" start="4"><li>Intermediate <code>html</code> knowledge</li></ol><ol type="1" id="e48b78bf-38f5-4d12-87c6-a0c81f00fd73" class="numbered-list" start="5"><li>Intermediate <code>scss</code> knowledge</li></ol><ol type="1" id="bd9e12d6-3d31-4eed-bb0d-80a32477ad7f" class="numbered-list" start="6"><li>Intermediate <code>javascript</code> knowledge</li></ol><blockquote id="4278bed8-d81f-41d0-8186-6ed55b5f1b9f" class="">WARNING</blockquote><h1 id="e5087240-d441-4b1b-9c7c-bebc09262af9" class="">Template structure:</h1><p id="ffa41dfb-fb68-4c01-bc25-63666eff25c2" class="">This section is about the Bulkit File structure. Learning more about it will help setup the template quickly and easily.</p><h3 id="5e4db2a9-c3f1-48f1-9f05-f6bfcc95bf58" class="">Global structure:</h3><hr id="838429c2-ded8-49e3-936a-d7fdd85398cc"/><p id="402c57a2-189e-447d-aff0-4ac4d4f6eebb" class="">Once you have downloaded the zip file from Themeforest, unzip it using your standard zip software. When it has finished you should have a folder with the following files &amp; directories inside.</p><pre id="dcb6f496-cf2d-44cb-a4f1-339dda07149c" class="code code-wrap"><code>📂 Raroin template
+| -- 📂 assets
+| --- |---- 📂 css
+| --- |---- 📂 fonts
+| --- |---- 📂 images
+| --- |---- 📂 js
+| -- Activity.html
+| -- index.html
+| -- auctions.html
+| -- items.html
+| -- my-bid.html
+| -- login.html
+| -- Marketplace.html
+| -- Profile.html
+| -- overview.html
+| -- Profile.html
+| -- settings.html
+| -- transactions.html</code></pre><h3 id="8f9b3fe6-2a56-4109-952a-1e990a57b6c8" class="">Images:</h3><hr id="3539d3c5-51d0-42a4-9843-6e4f3b5bd157"/><p id="b70db7d6-9af4-4f81-bace-6162a59c6bad" class="">All the project images live in this folder. It can have as many subfolders as you want. When you build the projects, all these images are automatically transfered to the right location by Gulp. We will see that a bit later.</p><pre id="639d77ef-572d-4342-ab9b-454b550cfd8a" class="code code-wrap"><code>| -- 📂 assets
+| --- |---- 📂 images
+| --- |----| --- avatars
+| --- |----| --- bg
+| --- |----| --- icons
+| --- |----| --- items
+| --- |----| --- logos
+| --- |----| --- notifications
+| --- |----| --- effects</code></pre><h3 id="519bc40f-1526-435e-9950-b6ecf597b3a4" class="">HTML Structure:</h3><hr id="ac57ad21-af7b-449f-8190-f7165033bbf8"/><p id="a587f5d0-d8d1-4ef4-836a-bd0ca35bee62" class="">This template using Bootstrap 5 Framework which is a free CSS framework based on Flexbox. And the HTML structure is very simple and easy to customize. Here is the sample for your reference:</p><pre id="aadbacd2-a299-4493-80c4-fa1f13e7e145" class="code code-wrap"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;title&quot; content=&quot;Raroin&quot; /&gt;
+        &lt;meta
+            name=&quot;description&quot;
+            content=&quot;Premium Multipurpose Bootstrap 5 template&quot; /&gt;
+        &lt;meta
+            name=&quot;keywords&quot;
+            content=&quot;bootstrap, creabik, ThemeForest, bootstrap5, agency theme, saas
+            theme, sass, html5&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;index, follow&quot; /&gt;
+        &lt;meta name=&quot;language&quot; content=&quot;English&quot; /&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+        &lt;title&gt; {{page title}} &lt;/title&gt;
+        &lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#da532c&quot; /&gt;
+        &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+        &lt;!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES --&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/remixicon.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/bootstrap.min.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/swiper-bundle.min.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/prism-tomorrow.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/modal-video.min.css&quot; /&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;{{root}}assets/css/style.css&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body id=&quot;body&quot; class=&quot;bg_light&quot;&gt;
+
+        {{-------- your content here ---------}}
+
+        &lt;!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS --&gt;
+        &lt;script src=&quot;{{root}}assets/js/Plugins.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;{{root}}assets/js/lottie.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;{{root}}assets/js/jquery.hover3d.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../assets/js/jquery-modal-video.min.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- &lt;script src=&quot;{{root}}assets/js/script.js&quot;&gt;&lt;/script&gt; --&gt;
+        &lt;script src=&quot;{{root}}assets/js/script.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre><h3 id="7002c663-2f9b-4a14-811d-3c57f70e20ff" class="">Js:</h3><hr id="7d526dc9-cee7-40d2-bbb9-d31025197c54"/><p id="b2aeb6c2-67fa-4138-8af7-a57b4c7bf204" class="">All of Raroin own javascript files live in this folder. Edit them to change the template functionality.</p><pre id="66fb9bed-8d78-4570-bd3e-6b9546ed949d" class="code code-wrap"><code>| -- 📂 assets
+| --- |---- 📂 Js
+| --- |----| --- script.js
+| --- |----| --- Plugins.js (can&#x27;t edit)</code></pre><h3 id="a39c3479-8e30-46a3-af6d-dbf32d42182f" class="">Scss:</h3><hr id="151db30d-5f03-44a4-8b5b-852f7347e9a9"/><p id="42101de9-fa76-455f-8091-a91b7a28e56d" class="">Raroin relies on the powerful Sass features, letting you handle complex styles in a breeze. Raroin relies on a modular scss structure. You need to import all the SCSS partials into your core file. This how scss files are organized.</p><pre id="4d1a4356-9331-40c6-81fa-8dc091f526a6" class="code code-wrap"><code>// style.scss
+// 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 Helpers
+@import &quot;1-helpers/colors&quot;;
+@import &quot;1-helpers/mixins&quot;;
+@import &quot;1-helpers/variables&quot;;
+@import &quot;1-helpers/global&quot;;
+@import &quot;1-helpers/classes&quot;;
+@import &quot;1-helpers/spacing&quot;;
+@import &quot;1-helpers/margin&quot;;
+@import &quot;1-helpers/padding&quot;;
+
+// 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 Base
+@import &quot;0-base/base&quot;;
+@import &quot;0-base/typography&quot;;
+
+// 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 elements
+
+@import &quot;2-elements/buttons&quot;;
+@import &quot;2-elements/forms&quot;;
+@import &quot;2-elements/dropdowns&quot;;
+@import &quot;2-elements/menus&quot;;
+@import &quot;2-elements/avatars&quot;;
+@import &quot;2-elements/popups&quot;;
+@import &quot;2-elements/card_items&quot;;
+@import &quot;2-elements/creators_items&quot;;
+@import &quot;2-elements/collections_items&quot;;
+@import &quot;2-elements/menus&quot;;
+
+// 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 Layouts
+@import &quot;3-Layouts/header&quot;;
+@import &quot;3-Layouts/hero&quot;;
+@import &quot;3-Layouts/footer&quot;;
+@import &quot;3-Layouts/sections&quot;;
+
+// 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 Pages
+// ===================================
+@import &quot;4-Pages/elements_page&quot;;</code></pre><h1 id="138a3779-eada-4526-84f0-e7b5dd1c25a3" class="">Customization:</h1><p id="fdb37450-c395-47d7-9520-0e8ebbc2c2b4" class="">Raroin is built in a scss modular approach. We&#x27;ve made it easy for you to customize theme colors.</p><p id="938f7098-63b2-4ee6-afdb-dba679507ea4" class="">fist make sure youare running sass compiler before making this edits you can use vscode compiler or gulp sass compiler</p><h3 id="8c5f3628-f3f4-4c5f-ac28-4bba1b3e39a2" class="">Change Main colors:</h3><hr id="68d016f9-e2ad-494a-9ea7-d6dee4c1dcc2"/><p id="0bdb9c81-d154-40f4-9cbd-fd12e1c89817" class="">you can easly change your pages main colors you need just go to <code>scss/1-helpers/colors.scss</code> and change your primary, and layouts colors</p><pre id="5e1f412a-df84-471d-9e39-0e59f439d4ec" class="code code-wrap"><code>// === Template colors
+
+$color_brand: #097CFF;
+$color_secondary: #10173e;
+$color_dark: #060b27;
+$color_black: #080134;
+$color_text: #9c99ae;
+$color_light: #ffffff21;
+$color_light2: rgba(255, 255, 255, 0.04);
+$color_green: #01c5ba;
+$color_blue: #72e6ff;
+$color_icon_green: #064462;
+$color_icon_red: #561857;
+$color_red: #ff6871;
+$color_pink: #ff72d2;
+$color_yellow: #fcd339;
+$color_white: #ffffff;</code></pre><h3 id="ae2f6205-7449-43e1-a532-b1f7e35897ca" class="">Change Logo:</h3><hr id="da09da49-c40b-4831-853e-09843d398cbc"/><p id="b34256a6-5cb3-4336-a005-bfbc8980a374" class="">The logo image can be found inside header container, so just upload you site logo image inside &gt; <code>assets &gt; images &gt; Logos &gt; logo.svg</code></p><pre id="e7159e24-347d-4c77-bfca-e7ade6e55a02" class="code code-wrap"><code>&lt;!-- ====== you can find it header section --&gt;
+&lt;div class=&quot;header__logo&quot;&gt;
+    &lt;a href=&quot;/&quot;&gt;
+        &lt;img class=&quot;header__logo&quot; src=&quot;assets/img/logos/Logo.svg&quot;
+            alt=&quot;logo&quot; /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</code></pre><h3 id="c3787079-18bc-4937-8621-a63bc083ee13" class="">Change Images:</h3><hr id="cb886c4f-cf41-4611-a341-c7718244c0c9"/><p id="ec24a716-ccbc-4ef0-a959-0d0633d72a7f" class="">this template downloaded package does not contain images which are there in our online demo. We are using placeholder images instead of real images. You will see the image code as mentioned below. You can replace placeholder image url with your image url like <code>/assets/images/Image_URL.png</code></p><h3 id="424b6cce-51cb-48b0-b4ff-7434d216ec99" class="">Changing Fonts:</h3><hr id="90908fcb-a4af-4f6d-a2ec-cefff48e786a"/><p id="15047317-cdfc-485e-b82d-0d4ec12ca9d9" class="">In order to use google fonts, you need to visit</p><p id="b7595ac0-a8af-407d-a563-33dbfb3a9100" class=""><a href="https://fonts.google.com/">Google Fonts Library</a></p><p id="633a6278-c13f-4026-8dac-5a6393eda2e8" class="">and follow the instructions on how to get a new font. After you have decided on the styles of the font that you want to load, or download it in<code> ./assets/fonts/</code></p><p id="cc9ed1b6-2f78-4881-b3e0-baf97a7a3edf" class="">after you need to add the name you font in<code>./assets/scss/bases/bases.scss</code> like this :</p><pre id="3d4eb4f1-5448-4a66-a14e-64c6f8ba4ea7" class="code code-wrap"><code>/*--------------------------------------------------------------
+## Include Fonts
+--------------------------------------------------------------*/
+@font-face {
+    font-family: &quot;circular&quot;;
+    src: url(&quot;../fonts/circular.ttf&quot;) format(&quot;truetype&quot;);
+}
+@font-face {
+    font-family: &quot;circular_bold&quot;;
+    src: url(&quot;../fonts/Circular-Bold.ttf&quot;) format(&quot;truetype&quot;);
+    font-weight: normal;
+}</code></pre><p id="933d93c6-029d-4d9b-9d21-326b175f0f24" class="">then Go to<code> ./assets/scss/1-helpers/_variables.scss</code> and edit this file with your new font like that:</p><pre id="3157c84f-d6af-41ad-94bc-ef0dfd6a0eb6" class="code code-wrap"><code>//variables.scss
+$font-primary:&quot;circular&quot;;
+$font-secondary:&quot;circular_bold&quot;;</code></pre><h1 id="9be04d68-ce8c-4c8b-8b3b-250ab2767622" class="">Customer Support:</h1><p id="4b694d20-cc57-49d9-87fa-ffa8487ffa23" class="">Please remember you have purchased a very affordable theme and you did not pay for a full-time web design agency. We will help with your issues, but these requests will be put on a relevant priority, regarding their nature. Support is provided for your comfort and for a best possible experience, so please be patient, polite and respectful, as we are towards you.</p><h3 id="2668d76e-18c1-4d0e-847d-3c019aeb2359" class="">Support includes:</h3><hr id="ffb55ac4-189c-44a3-9958-2b0736cca769"/><ul id="52449492-61fc-4f6c-b513-751448a445f9" class="bulleted-list"><li style="list-style-type:disc">Responding to questions or problems regarding the item and its features</li></ul><ul id="d54e0402-c238-44ce-9c89-b40ece221910" class="bulleted-list"><li style="list-style-type:disc">Fixing bugs and reported issues</li></ul><ul id="ac972e32-5a1d-42ea-b03c-9d8fa8f07f18" class="bulleted-list"><li style="list-style-type:disc">Providing updates</li></ul><h3 id="eeee0078-8b43-4d87-af64-3f500cfc879e" class="">Support doesn&#x27;t include :</h3><hr id="cd619286-c689-45e2-8664-6e1a9f23dbbd"/><ul id="8929c1bd-2de8-4dbb-b66e-6c121950a5b5" class="bulleted-list"><li style="list-style-type:disc">Customization and installation services</li></ul><ul id="3f0ea173-1595-4387-ae5c-bfc1f2bfc6c4" class="bulleted-list"><li style="list-style-type:disc">Support for third party software and plugins</li></ul><h3 id="b24cb51a-3bdf-43cd-a4b9-317a42114b56" class="">Before Support:</h3><hr id="d8217b64-213d-4c1c-b3ca-83a8507cd059"/><ul id="ce533217-a1fc-4bb4-8589-f6ed0e7fbc24" class="bulleted-list"><li style="list-style-type:disc">Make sure your question is a valid Theme Issue and not a customization request</li></ul><ul id="8a72355e-8350-4025-b37f-c1ead9b3e549" class="bulleted-list"><li style="list-style-type:disc">Make sure you have read through the documentation and any ressources before asking support on how to accomplish a task</li></ul><ul id="b80898f3-c9fc-4f06-9259-8147de2efb98" class="bulleted-list"><li style="list-style-type:disc">If you have customized your theme and now have an issue, back-track to make sure you didn&#x27;t make a mistake. If you have made changes and can&#x27;t find the issue, please provide us with your changelog.</li></ul><ul id="03a56664-6234-41f6-9e3f-8e6db59d6f6b" class="bulleted-list"><li style="list-style-type:disc">Almost 80% of the time we find that the solution to people&#x27;s issues can be solved with a simple &quot;Google Search&quot;. You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li></ul><ul id="fafc535f-239a-47b4-ac0d-06fcc161dc75" class="bulleted-list"><li style="list-style-type:disc">Make sure to state the name of the theme you are having issues with when requesting support.</li></ul></div></article></body></html>
